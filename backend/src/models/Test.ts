@@ -30,11 +30,11 @@ const TestSchema = new Schema<ITestDocument>(
             enum: ["academic", "general"],
             default: "academic",
         },
-        duration: {
-            type: Number,
+        duration: { type: Number,
             required: true,
             default: 60,
         },
+           
         createdBy: {
             type: Schema.Types.ObjectId as any, // safety lost but worked
             ref: "User",
