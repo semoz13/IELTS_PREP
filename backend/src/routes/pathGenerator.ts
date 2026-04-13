@@ -23,6 +23,10 @@ export class PathGenerator {
     update: (id: string) => this.prepend(`/users/${id}`),
     delete: (id: string) => this.prepend(`/users/${id}`),
   };
+
+  reading={
+    getAll:()=> this.prepend("/reading"),
+  }
 }
 
 export const paths = new PathGenerator();

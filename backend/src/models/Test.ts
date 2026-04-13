@@ -1,19 +1,10 @@
 import mongoose, { Schema, Document, Model } from "mongoose";
-import { TestType, TestSection } from "@/types/ReadingTypes";
-import { BaseType } from "@/types/BaseType";
+import { Test } from "@/types/Test";
 
-type ITest = BaseType & {
-    title: string;
-    type: TestType;
-    section:TestSection;
-    duration: number;
-    createdBy: string;
-    isAiGenerated: boolean;
-};
 
-type ITestDocument = ITest & Document;
+type TestDocument = Test & Document;
 
-const TestSchema = new Schema<ITestDocument>(
+const TestSchema = new Schema<TestDocument>(
     {
         title: {
             type: String,
@@ -36,7 +27,7 @@ const TestSchema = new Schema<ITestDocument>(
         },
            
         createdBy: {
-            type: Schema.Types.ObjectId as any, // safety lost but worked
+            type: Schema.Types.ObjectId,
             ref: "User",
             required: true,
         },
@@ -48,7 +39,7 @@ const TestSchema = new Schema<ITestDocument>(
     { timestamps: true},
 );
 
-const Test: Model<ITestDocument> = mongoose.model<ITestDocument>(
+const Test: Model<TestDocument> = mongoose.model<TestDocument>(
     "Test",
     TestSchema,
 );

@@ -1,12 +1,12 @@
-import mongoose, {Schema, Document, Model} from "mongoose";
-import { Passage } from "@/types/ReadingTypes";
+import mongoose, { Types,Schema, Document, Model} from "mongoose";
+import { Passage } from "@/types/Reading.types";
 
-type IpassageDocument = Passage & Document;
+type passageDocument = Passage & Document;
 
-const PassageSchema = new Schema<IpassageDocument>(
+const PassageSchema = new Schema<passageDocument>(
     {
         testId: { 
-            type: String, //first it says ObjectId
+            type: Types.ObjectId, //first it says ObjectId
             ref: "Test",
             required: true,
         },
@@ -29,7 +29,7 @@ const PassageSchema = new Schema<IpassageDocument>(
     { timestamps: true },
 );
 
-const Passage: Model<IpassageDocument> = mongoose.model<IpassageDocument>(
+const Passage: Model<passageDocument> = mongoose.model<passageDocument>(
     "Passage",
     PassageSchema,
 );
