@@ -1,4 +1,4 @@
-import { QuestionType } from "./Reading.types";
+import { QuestionType } from "./Reading.type";
 
 export type GeneratedChoice = {
     text: string;

@@ -1,5 +1,5 @@
 import mongoose, { Types,Schema, Document, Model} from "mongoose";
-import { Passage } from "@/types/Reading.types";
+import { Passage } from "@/types/Reading.type";
 
 type passageDocument = Passage & Document;
 

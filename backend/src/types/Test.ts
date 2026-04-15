@@ -1,4 +1,4 @@
-import { TestSection } from "@/types/Reading.types";
+import { TestSection } from "@/types/Reading.type";
 import { BaseType } from "@/types/BaseType";
 import { User } from "@/types/UserType";
 import { Types, Schema } from "mongoose";

@@ -1,28 +1,8 @@
 import mongoose, { Types,Schema, Document,Model} from "mongoose";
 import { Attempt } from "@/types/Attempt";
-import { passageTiming } from "@/types/Reading.types";
+import { PassageTimingSchema } from "./PassageTiming";
 
 type AttemptDocument =  Attempt & Document;
-
-const PassageTimingSchema = new Schema<passageTiming>(
-    {
-        passageId: {
-            type: Schema.Types.ObjectId,
-            ref: "Passage",
-            required: true
-        },
-        passageIndex: {
-            type: Number,
-            required: true
-        },
-        timeSpentSeconds: {
-            type: Number,
-            required: true,
-            default: 0
-        },
-    },
-    { _id: false }, 
-);
 
 const AttemptSchema = new Schema<AttemptDocument>(
     {

@@ -1,17 +1,19 @@
 import {BaseType} from "./BaseType";
 import { Types,Schema } from "mongoose";
 
-export type QuestionType = 
-    | "multiple_choice"
-    | "true_false_not_given"
-    | "fill_blank"
-    | "match_heading"
-    | "complete_table"
-    | "match_paragraph"
-    | "short_answer"
-    | "label_diagram"
-    | "complete_sentence";
+export const QUESTION_TYPES = [
+     "multiple_choice",
+     "true_false_not_given",
+     "fill_blank",
+     "match_heading",
+     "complete_table",
+     "match_paragraph",
+     "short_answer",
+     "label_diagram",
+     "complete_sentence"
+] as const;
 
+export type QuestionType = typeof QUESTION_TYPES[number];
 export type TestType = "reading" | "listening" | "writing" | "speaking"; 
 export type TestSection = "academic" | "general"; 
 

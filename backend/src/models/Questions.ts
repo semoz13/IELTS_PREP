@@ -1,5 +1,6 @@
 import mongoose, { Types , Schema, Document, Model } from "mongoose";
 import { Question }  from "@/types/Question";
+import { QUESTION_TYPES } from "@/types/Reading.type";
 
 type QuestionDocument = Question & Document;
 
@@ -17,17 +18,7 @@ const QuestionSchema = new Schema<QuestionDocument>(
         },
         type: {
             type: String,
-            enum: [
-                "multiple_choice",
-                "true_false_not_given",
-                "fill_blank",
-                "match_heading",
-                "complete_table",
-                "match_pragraph",
-                "match_statement",
-                "label_diagram",
-                "complete_sentence",
-            ],
+            enum: QUESTION_TYPES,
             required: true,
         },
         text: {

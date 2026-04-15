@@ -18,6 +18,7 @@ const UserAnswerSchema = new Schema<UserAnswerDocument>(
         choiceId: {
             type: Schema.Types.ObjectId,
             ref: "Choice",
+            required: true,
             default: null,
         },
         textAnswer: {
