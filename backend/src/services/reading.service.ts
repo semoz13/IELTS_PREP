@@ -3,11 +3,11 @@ import { aiService } from "./ai.services";
 
 import Passage from "@/models/Passage";
 import Test from "@/models/Test";
-import Question from "@/models/Questions";
+import Question from "@/models/Question";
 import Choice from "@/models/Choice";
 import Attempt from "@/models/Attempt";
 import UserAnswer  from "@/models/UserAnswer";
-import { passageTiming } from "@/types/Reading.type";
+
 
 const startTest = async (
     userId: string,
@@ -78,7 +78,7 @@ const getAttemptState = async (attemptId: string, userId: string) => {
     });
 
     if (!attempt) return null;
-    const passages = await Passage.find({testId: attempt.testId}).sort({
+    const passages = await Passage.find({testId: attempt.testId}).sort({ 
         index: 1,
     });
 
@@ -88,7 +88,7 @@ const getAttemptState = async (attemptId: string, userId: string) => {
                 passageId: passage._id,
             }).sort({orderIndex: 1});
 
-            const questionWithChoice = await Promise.all(
+            const questionsWithChoices = await Promise.all(
                 questions.map(async (q)=> {
                     const choice =
                      q.type === "multiple_choice"
@@ -111,7 +111,7 @@ const getAttemptState = async (attemptId: string, userId: string) => {
                 index: passage.index,
                 title: passage.title,
                 body: passage.body,
-                question: questionWithChoice,
+                question: questionsWithChoices,
             };
         }),
     );
@@ -208,6 +208,7 @@ const submitAttempt = async (attemptId: string, userId: string) => {
     let correctCount = 0;
 
     //score each answer
+    //currently we fetch per question for simplicity, but it can be optimized using batch queries
     for (const answer of answers) {
         const question = await Question.findById(answer.questionId);
         if (!question) continue;
@@ -222,7 +223,7 @@ const submitAttempt = async (attemptId: string, userId: string) => {
             //case insensetive match for text answer
             isCorrect = 
             answer.textAnswer.trim().toLowerCase() ===
-            question.correctAnswer.trim().toLocaleLowerCase();
+            question.correctAnswer.trim().toLowerCase();
         }
 
         answer.isCorrect = isCorrect;

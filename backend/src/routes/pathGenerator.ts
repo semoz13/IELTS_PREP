@@ -26,7 +26,17 @@ export class PathGenerator {
 
   reading={
     getAll:()=> this.prepend("/reading"),
-  }
+
+    startTest: () => this.prepend("/reading/start"),
+    getAttemptState: (attemptId: string) =>
+      this.prepend(`/reading/attempt/${attemptId}`),
+    saveAnswer: (attemptId: string) => 
+      this.prepend(`/reading/attempt/${attemptId}/answer`),
+    updateTiming: (attemptId: string) =>
+      this.prepend(`/reading/attempt/${attemptId}/timing`),
+    submit: (attemptId: string) => 
+      this.prepend(`/reading/attempt/${attemptId}/submit`),
+  };
 }
 
 export const paths = new PathGenerator();
