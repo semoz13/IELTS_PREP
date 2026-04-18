@@ -16,7 +16,7 @@ import { userController } from "@/controllers/user.controller";
 // ─── Users ──────────────────────────────────────────────────── 
 router.get(paths.users.getAll(), protect, userController.getAll);
 router.get(paths.users.getById(":id"), protect, userController.getById);
-router.post(paths.users.create(), protect, userController.create);
+router.post(paths.users.create(), userController.create);
 router.put(paths.users.update(":id"), protect, userController.update);
 router.delete(paths.users.delete(":id"), protect, userController.remove);
 

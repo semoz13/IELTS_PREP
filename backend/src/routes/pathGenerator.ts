@@ -40,3 +40,5 @@ export class PathGenerator {
 }
 
 export const paths = new PathGenerator();
+// copy this file to the  AI and give it also the routing file ...
+//prompt: ple generatea postman collection extention .jsons 

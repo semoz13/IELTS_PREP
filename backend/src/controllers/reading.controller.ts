@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import { readingService } from "@/services/reading.service";
 import { StatusCodes } from "http-status-codes";
-
+import { BadRequestError } from '@/utils/errors'; 
 const startTest = async (
   req: Request,
   res: Response,
@@ -9,7 +9,12 @@ const startTest = async (
 ): Promise<void> => {
   try {
     const userId = (req as any).user.userId;
-    const section = (req.body.section as "academic" | "general") ?? "academic";
+    const {section} = req.body;
+    if (!section || !['academic' , 'general'].includes(section)){
+
+      throw new BadRequestError(`section is required,expectedacademic or general and got : ${section}`);
+    }
+  
 
     const result = await readingService.startTest(userId, section);
 
