@@ -3,12 +3,18 @@
 // real API calls once you decide on OpenAI / Claude / etc.
 // Nothing outside this file needs to change.
 
-import { GeneratedReadingTest } from "@/types/ai.types";
+import {
+  GeneratedReadingTest,
+  GeneratedListeningTest,
+} from "@/types/ai.types";
 
 
 
 // ─── Stub ─────────────────────────────────────────────────────
 export const aiService = {
+  
+  
+  //reading
   generateReadingTest: async (
     section: "academic" | "general",
   ): Promise<GeneratedReadingTest> => {
@@ -55,4 +61,49 @@ export const aiService = {
       ],
     };
   },
+
+
+  //listening
+  generateListeningTest: async (): Promise<GeneratedListeningTest> => {
+    // TODO: replace with real AI call
+    // The real implementation will call a TTS or audio-gen service
+    // and return actual hosted audio URLs alongside the questions.
+    const sections = Array.from({ length: 4 }, (_, i)=> ({
+      sectionNumber: i+1,
+      // Stub audio URL — replace with real AI-generated or TTS audio path
+      audioUrl: `/uploads/audio/stub-section-${i + 1}.mp3`,
+      questions: [
+        {
+          type: "multiple_choice" as const,
+          text: `section ${i+1} — what is the speakers's main point?`,
+          orderIndex: 1,
+          choices: [
+            { text: "Option A", isCorrect: true },
+            { text: "Option B", isCorrect: false },
+            { text: "Option C", isCorrect: false },
+            { text: "Option D", isCorrect: false },
+          ],
+        },
+        {
+          type: "fill_blank" as const,
+          text: "The meeting is scheduled for ______.",
+          correctAnswer: "Monday",
+          orderIndex: 2,
+        },
+        {
+          type: "complete_table" as const,
+          text: "complete the table: Name: John, Age: ____",
+          correctAnswer: "32",
+          orderIndex: 3,
+        },
+      ],
+    }));
+
+    return { 
+      title: "IELTS Listening Practice Test",
+      sections,
+    };
+  },
+
+  
 };
