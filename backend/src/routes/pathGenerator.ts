@@ -10,41 +10,50 @@ export class PathGenerator {
   }
 
   auth = {
-    register: () => this.prepend("/auth/register"),
-    login: () => this.prepend("/auth/login"),
-    logout: () => this.prepend("/auth/logout"),
-    me: () => this.prepend("/auth/me"),
+    register:           () => this.prepend("/auth/register"),
+    login:              () => this.prepend("/auth/login"),
+    logout:             () => this.prepend("/auth/logout"),
+    me:                 () => this.prepend("/auth/me"),
   };
 
   users = {
-    getAll: () => this.prepend("/users"),
-    getById: (id: string) => this.prepend(`/users/${id}`),
-    create: () => this.prepend("/users"),
-    update: (id: string) => this.prepend(`/users/${id}`),
-    delete: (id: string) => this.prepend(`/users/${id}`),
+    getAll:             () => this.prepend("/users"),
+    getById:            (id: string) => this.prepend(`/users/${id}`),
+    create:             () => this.prepend("/users"),
+    update:             (id: string) => this.prepend(`/users/${id}`),
+    delete:             (id: string) => this.prepend(`/users/${id}`),
   };
 
   reading={
-    getAll:()=> this.prepend("/reading"),
+    getAll:             ()=> this.prepend("/reading"),
 
-    startTest: () => this.prepend("/reading/start"),
-    getAttemptState: (attemptId: string) =>
-      this.prepend(`/reading/attempt/${attemptId}`),
-    saveAnswer: (attemptId: string) => 
-      this.prepend(`/reading/attempt/${attemptId}/answer`),
-    updateTiming: (attemptId: string) =>
-      this.prepend(`/reading/attempt/${attemptId}/timing`),
-    submit: (attemptId: string) => 
-      this.prepend(`/reading/attempt/${attemptId}/submit`),
+    startTest:          () => this.prepend("/reading/start"),
+    getAttemptState:    (attemptId: string) =>
+      this.prepend      (`/reading/attempt/${attemptId}`),
+    saveAnswer:         (attemptId: string) => 
+      this.prepend      (`/reading/attempt/${attemptId}/answer`),
+    updateTiming:       (attemptId: string) =>
+      this.prepend      (`/reading/attempt/${attemptId}/timing`),
+    submit:             (attemptId: string) => 
+      this.prepend      (`/reading/attempt/${attemptId}/submit`),
   };
 
 
   listening = {
-    startTest:        () => this.prepend("/listening/start"),
-    getAttemptState:  (attemptId: string) => this.prepend(`/listening/attempts/${attemptId}`),
-    registerPlay:     (attemptId: string) => this.prepend(`/listening/attempts/${attemptId}/play`),
-    saveAnswer:       (attemptId: string) => this.prepend(`/listening/attempts/${attemptId}/answer`),
-    submit:           (attemptId: string) => this.prepend(`/listening/attempts/${attemptId}/submit`),    
+    startTest:          () => this.prepend("/listening/start"),
+    getAttemptState:    (attemptId: string) => this.prepend(`/listening/attempts/${attemptId}`),
+    registerPlay:       (attemptId: string) => this.prepend(`/listening/attempts/${attemptId}/play`),
+    saveAnswer:         (attemptId: string) => this.prepend(`/listening/attempts/${attemptId}/answer`),
+    submit:             (attemptId: string) => this.prepend(`/listening/attempts/${attemptId}/submit`),    
+  };
+
+
+  writing = {
+    startTest:          () => this.prepend("/writing/start"),
+    getAttemptState:    (attemptId: string) => this.prepend(`/writing/attempt/${attemptId}`),
+    submitTask:         (attemptId: string) => this.prepend(`/writing/attempt/${attemptId}/submit`),
+    reviewSubmission:   (submissionId: string) => this.prepend(`/writing/submissions/${submissionId}/review`),
+    getPendingReviews:  () => this.prepend("/writing/reviews/pending"),
   };
 }
 

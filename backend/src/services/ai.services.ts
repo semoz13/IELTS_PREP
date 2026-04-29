@@ -6,6 +6,8 @@
 import {
   GeneratedReadingTest,
   GeneratedListeningTest,
+  GeneratedWritingTest,
+  AiWritingScore,
 } from "@/types/ai.types";
 
 
@@ -105,5 +107,64 @@ export const aiService = {
     };
   },
 
-  
+
+  //writing: generate prompts 
+  generateWritingTest: async (
+    section: "academic" | "general",
+  ): Promise<GeneratedWritingTest> => {
+    //to replace with real ai call
+    const task1: GeneratedWritingTest["task1"] = 
+      section === "academic"
+        ? {
+          taskType: "task1",
+          prompt: 
+            "the chart below show the percentage of households with access in five countries between 2010 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          imageDescription: 
+            "A bar chart comparing internet access rates across five countries (USA, UK, Germany, Brazil, India)",
+          minWordCount: 150,
+          timeAllowedMinutes: 20,
+          }
+
+      :   { 
+          taskType: "task1",
+          prompt:
+            "You recently stayed at a hotel and found the service unsatisfactory. Write a letter to the hotel manager",
+          minWordCount: 150,
+          timeAllowedMinutes: 20,
+          };
+    return {
+      title: `IELTS ${section} Writing Practice Test`,
+      section,
+      task1,
+      task2: {
+        taskType: "task2",
+        prompt:
+          "Some people believe that universities should focus on providing academic knowledge, while others think they should better prepare students for the job market. Discuss both views and give your own opinion.",
+        minWordCount: 250,
+        timeAllowedMinutes: 40,
+      },
+    };
+  },
+
+
+  //writing: score the submission
+  scoreWritingResponse: async (
+    taskType: "task1" | "task2",
+    section: "academic" | "general",
+    prompt: string,
+    responseText: string,
+  ): Promise<AiWritingScore> => {
+    // TODO: replace with real AI call
+    return {
+      band: 6.0,
+      criteriaScores: {
+        taskAchievement:   6,
+        coherenceCohesion: 6,
+        lexicalResources:   6,
+        grammaticalRange:  6,
+      },
+      feedback:
+        "Stub feedback — replace with real AI analysis. Your response addresses the task, but could benefit from more specific examples and varied vocabulary.",
+    };
+  },
 };
