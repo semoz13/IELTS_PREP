@@ -47,3 +47,32 @@ export type GeneratedListeningTest = {
     title: string;
     sections: GeneratedListeningSection[];
 };
+
+
+// writing Ai types 
+
+export type GeneratedWritingTask = {
+    taskType: "task1" | "task2";
+    prompt: string;
+    imageDescription?: string;
+    minWordCount: number;
+    timeAllowedMinutes: number;
+};
+
+export type GeneratedWritingTest = { 
+    title: string;
+    section: "academic" | "general";
+    task1: GeneratedWritingTask;
+    task2: GeneratedWritingTask;
+};
+
+export type AiWritingScore = {
+    band: number;
+    criteriaScores: {
+        taskAchievement: number;
+        coherenceCohesion: number;
+        lexicalResource: number;
+        grammaticalRange: number;
+    };
+    feedback: string;
+};
