@@ -23,6 +23,22 @@ export class PathGenerator {
     update: (id: string) => this.prepend(`/users/${id}`),
     delete: (id: string) => this.prepend(`/users/${id}`),
   };
+
+  reading={
+    getAll:()=> this.prepend("/reading"),
+
+    startTest: () => this.prepend("/reading/start"),
+    getAttemptState: (attemptId: string) =>
+      this.prepend(`/reading/attempt/${attemptId}`),
+    saveAnswer: (attemptId: string) => 
+      this.prepend(`/reading/attempt/${attemptId}/answer`),
+    updateTiming: (attemptId: string) =>
+      this.prepend(`/reading/attempt/${attemptId}/timing`),
+    submit: (attemptId: string) => 
+      this.prepend(`/reading/attempt/${attemptId}/submit`),
+  };
 }
 
 export const paths = new PathGenerator();
+// copy this file to the  AI and give it also the routing file ...
+//prompt: ple generatea postman collection extention .jsons 

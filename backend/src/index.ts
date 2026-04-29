@@ -31,4 +31,6 @@ const start = async (): Promise<void> => {
   });
 };
 
+app.use(express.json());
+
 start();

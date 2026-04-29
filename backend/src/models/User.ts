@@ -1,9 +1,9 @@
 import mongoose, { Schema, Document, Model } from "mongoose";
 import { User } from "@/types/UserType";
 
-type IUserDocument = User & Document;
+type UserDocument = User & Document;
 
-const UserSchema = new Schema<IUserDocument>(
+const UserSchema = new Schema<UserDocument>(
   {
     name: {
       type: String,
@@ -46,7 +46,7 @@ const UserSchema = new Schema<IUserDocument>(
   },
 );
 
-const User: Model<IUserDocument> = mongoose.model<IUserDocument>(
+const User: Model<UserDocument> = mongoose.model<UserDocument>(
   "User",
   UserSchema,
 );
