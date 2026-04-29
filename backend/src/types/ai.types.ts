@@ -1,5 +1,7 @@
 import { QuestionType } from "./Reading.type";
 
+
+//reading AI types 
 export type GeneratedChoice = {
     text: string;
     isCorrect: boolean;
@@ -26,3 +28,22 @@ export type GeneratedReadingTest = {
     passages: GeneratedPassage[]; //real data because passage is a type
 };
 
+//listening AI types
+export type GeneratedListeningQuestion = {
+    type : "multiple_choice" | "fill_blank" | "match_statement" | "complete_table";
+    text: string;
+    correctAnswer?: string;
+    choices?: GeneratedChoice[];
+    orderIndex: number;
+};
+
+export type GeneratedListeningSection = {
+    sectionNumber: number;
+    audioUrl: string;
+    questions: GeneratedListeningQuestion[];
+};
+
+export type GeneratedListeningTest = {
+    title: string;
+    sections: GeneratedListeningSection[];
+};

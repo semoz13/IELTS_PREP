@@ -14,7 +14,12 @@ const QuestionSchema = new Schema<QuestionDocument>(
         passageId: {
             type: Types.ObjectId,
             ref: "Passage",
-            required: true,
+            default: null,
+        },
+        sectionId: {
+            type: Types.ObjectId,
+            ref: "ListeningSection",
+            default: null,
         },
         type: {
             type: String,

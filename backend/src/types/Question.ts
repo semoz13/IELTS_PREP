@@ -4,7 +4,8 @@ import { BaseType } from "@/types/BaseType";
 
 export type Question = BaseType & {
     testId: Types.ObjectId;
-    passageId: Types.ObjectId; 
+    passageId: Types.ObjectId | null; 
+    sectionId?: Types.ObjectId;
     type: QuestionType ;
     text: string;
     correctAnswer?: string | null;
