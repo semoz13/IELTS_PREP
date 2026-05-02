@@ -1,4 +1,5 @@
 import { BaseType } from "./BaseType";
+import { User } from "./UserType";
 
 export type ActionType =
   | "LOGIN"
@@ -22,7 +23,7 @@ export type ResourceType =
 export type ActionStatus = "SUCCESS" | "FAILURE";
 
 export type ActionLog = BaseType & {
-  userId: string;
+  userId: string | User;
   action: ActionType;
   resourceType?: ResourceType;
   resourceId?: string;

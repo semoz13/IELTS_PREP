@@ -10,12 +10,8 @@ import {
   AiWritingScore,
 } from "@/types/ai.types";
 
-
-
 // ─── Stub ─────────────────────────────────────────────────────
 export const aiService = {
-  
-  
   //reading
   generateReadingTest: async (
     section: "academic" | "general",
@@ -25,7 +21,7 @@ export const aiService = {
     //const response = await openai.chat.completions.create({ ... })
     // Example for Claude:
     //const response = await anthropic.messages.create({ ... })
-    
+
     return {
       title: `IELTS ${section} Reading Practice Test`,
       section,
@@ -64,20 +60,19 @@ export const aiService = {
     };
   },
 
-
   //listening
   generateListeningTest: async (): Promise<GeneratedListeningTest> => {
     // TODO: replace with real AI call
     // The real implementation will call a TTS or audio-gen service
     // and return actual hosted audio URLs alongside the questions.
-    const sections = Array.from({ length: 4 }, (_, i)=> ({
-      sectionNumber: i+1,
+    const sections = Array.from({ length: 4 }, (_, i) => ({
+      sectionNumber: i + 1,
       // Stub audio URL — replace with real AI-generated or TTS audio path
       audioUrl: `/uploads/audio/stub-section-${i + 1}.mp3`,
       questions: [
         {
           type: "multiple_choice" as const,
-          text: `section ${i+1} — what is the speakers's main point?`,
+          text: `section ${i + 1} — what is the speakers's main point?`,
           orderIndex: 1,
           choices: [
             { text: "Option A", isCorrect: true },
@@ -101,36 +96,34 @@ export const aiService = {
       ],
     }));
 
-    return { 
+    return {
       title: "IELTS Listening Practice Test",
       sections,
     };
   },
 
-
-  //writing: generate prompts 
+  //writing: generate prompts
   generateWritingTest: async (
     section: "academic" | "general",
   ): Promise<GeneratedWritingTest> => {
     //to replace with real ai call
-    const task1: GeneratedWritingTest["task1"] = 
+    const task1: GeneratedWritingTest["task1"] =
       section === "academic"
         ? {
-          taskType: "task1",
-          prompt: 
-            "the chart below show the percentage of households with access in five countries between 2010 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
-          imageDescription: 
-            "A bar chart comparing internet access rates across five countries (USA, UK, Germany, Brazil, India)",
-          minWordCount: 150,
-          timeAllowedMinutes: 20,
+            taskType: "task1",
+            prompt:
+              "the chart below show the percentage of households with access in five countries between 2010 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+            imageDescription:
+              "A bar chart comparing internet access rates across five countries (USA, UK, Germany, Brazil, India)",
+            minWordCount: 150,
+            timeAllowedMinutes: 20,
           }
-
-      :   { 
-          taskType: "task1",
-          prompt:
-            "You recently stayed at a hotel and found the service unsatisfactory. Write a letter to the hotel manager",
-          minWordCount: 150,
-          timeAllowedMinutes: 20,
+        : {
+            taskType: "task1",
+            prompt:
+              "You recently stayed at a hotel and found the service unsatisfactory. Write a letter to the hotel manager",
+            minWordCount: 150,
+            timeAllowedMinutes: 20,
           };
     return {
       title: `IELTS ${section} Writing Practice Test`,
@@ -146,7 +139,6 @@ export const aiService = {
     };
   },
 
-
   //writing: score the submission
   scoreWritingResponse: async (
     taskType: "task1" | "task2",
@@ -158,10 +150,10 @@ export const aiService = {
     return {
       band: 6.0,
       criteriaScores: {
-        taskAchievement:   6,
+        taskAchievement: 6,
         coherenceCohesion: 6,
-        lexicalResources:   6,
-        grammaticalRange:  6,
+        lexicalResource: 6,
+        grammaticalRange: 6,
       },
       feedback:
         "Stub feedback — replace with real AI analysis. Your response addresses the task, but could benefit from more specific examples and varied vocabulary.",
