@@ -21,7 +21,7 @@ export const protect = (
 
   try {
     const decoded = jwt.verify(token, env.jwtAccessSecret);
-    (req as any).user = decoded;
+    req.user = decoded as {userId:string, role: 'admin' | 'user'};
     next();
   } catch (error) {
     next(error);

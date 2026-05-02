@@ -8,6 +8,7 @@ import {
   GeneratedListeningTest,
   GeneratedWritingTest,
   AiWritingScore,
+  GeneratedSpeakingTest,
 } from "@/types/ai.types";
 
 
@@ -160,11 +161,90 @@ export const aiService = {
       criteriaScores: {
         taskAchievement:   6,
         coherenceCohesion: 6,
-        lexicalResources:   6,
+        lexicalResource:   6,
         grammaticalRange:  6,
       },
       feedback:
         "Stub feedback — replace with real AI analysis. Your response addresses the task, but could benefit from more specific examples and varied vocabulary.",
     };
   },
+
+  // speaking: generate questions (flexible count per part, AI decides)
+  generateSpeakingTest: async (): Promise<GeneratedSpeakingTest> => {
+ // TODO: replace with real AI call (Claude / GPT-4o / etc.)
+    // The AI should return questions for all 3 parts with
+    // appropriate preparationTimeSeconds and answerTimeSeconds
+    return {
+      title: "IELTS Speaking Practice Test",
+      questions: [
+        // Part 1 — personal questions (0 s prep, 60 s answer)
+        {
+          partNumber: 1,
+          orderIndex: 1,
+          preparationTimeSeconds: 0,
+          answerTimeSeconds: 60,
+          prompt:
+            "Can you describe the area where you grew up? What do you like most about it?",
+        },
+        {
+          partNumber: 1,
+          orderIndex: 2,
+          preparationTimeSeconds: 0,
+          answerTimeSeconds: 60,
+          prompt:
+            "How do you usually spend your weekends? Has this changed over the years?",
+        },
+        {
+          partNumber: 1,
+          orderIndex: 3,
+          preparationTimeSeconds: 0,
+          answerTimeSeconds: 60,
+          prompt:
+            "Do you enjoy reading? What kinds of books or articles do you prefer?",
+        },
+        // Part 2 — cue card long turn (60 s prep, 120 s answer)
+        {
+          partNumber: 2,
+          orderIndex: 1,
+          preparationTimeSeconds: 60,
+          answerTimeSeconds: 120,
+          prompt:
+            "Describe a place in the countryside that you have visited.\n" +
+            "You should say:\n" +
+            "• where it is\n" +
+            "• when you went there\n" +
+            "• what you did there\n" +
+            "and explain why you enjoyed the visit.",
+        },
+        // Part 3 — abstract discussion (0 s prep, 120 s answer)
+        {
+          partNumber: 3,
+          orderIndex: 1,
+          preparationTimeSeconds: 0,
+          answerTimeSeconds: 120,
+          prompt:
+            "Do you think people in your country are moving away from rural areas toward cities? Why?",
+        },
+        {
+          partNumber: 3,
+          orderIndex: 2,
+          preparationTimeSeconds: 0,
+          answerTimeSeconds: 120,
+          prompt:
+            "What are the advantages and disadvantages of living in the countryside compared to urban areas?",
+        },
+        {
+          partNumber: 3,
+          orderIndex: 3,
+          preparationTimeSeconds: 0,
+          answerTimeSeconds: 120,
+          prompt:
+            "How does tourism affect small rural communities? Do the benefits outweigh the drawbacks?",
+        },
+      ],
+    };
+  },
 };
+
+
+  

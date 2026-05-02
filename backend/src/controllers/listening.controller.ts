@@ -11,7 +11,7 @@ const startTest = async (
     next: NextFunction,
 ): Promise<void> => {
     try { 
-        const userId = (req as any).user.userId;
+        const userId = req.user.userId;
 
         const result = await listeningService.startTest(userId);
         res.status(StatusCodes.CREATED).json({ success: true,data: result });
@@ -26,7 +26,7 @@ const getAttemptState = async (
     next: NextFunction,
 ): Promise<void> => {
     try {
-        const userId = (req as any).user.userId
+        const userId = req.user.userId
         const { attemptId } = req.params;
 
         const state = await listeningService.getAttemptState(attemptId as string, userId);
@@ -50,7 +50,7 @@ const registerPlay = async (
     next: NextFunction,
 ): Promise<void> => {
     try {
-        const userId = (req as any).user.userId;
+        const userId = req.user.userId;
         const { attemptId } = req.params;
         const { sectionId } = req.body;
 
@@ -85,7 +85,7 @@ const saveAnswer = async (
     next: NextFunction,
 ): Promise<void> => {
     try {
-        const userId = ( req as any ).user.userId;
+        const userId = ( req ).user.userId;
         const { attemptId } = req.params;
         const { questionId, choiceId, textAnswer } = req.body;
 
@@ -123,7 +123,7 @@ const submitAttempt = async (
     next: NextFunction,
 ): Promise<void> => {
     try {
-        const userId = (req as any).user.userId;
+        const userId = req.user.userId;
         const { attemptId } = req.params;
 
         const result = await listeningService.submitAttempt(attemptId as string, userId);

@@ -6,6 +6,7 @@ import { readingController } from "@/controllers/reading.controller";
 import { userController } from "@/controllers/user.controller";
 import { listeningController } from "@/controllers/listening.controller";
 import { writingController } from "@/controllers/writing.controller";
+import { speakingController } from "@/controllers/speaking.controller";
 
 const router = Router();
 
@@ -49,5 +50,14 @@ router.get(paths.writing.getAttemptState(":attemptId"),         protect, writing
 router.post(paths.writing.submitTask(":attemptId"),             protect, writingController.submitTask);
 router.patch(paths.writing.reviewSubmission(":submissionId"),   protect, writingController.reviewSubmission);
 router.get(paths.writing.getPendingReviews(),                   protect, writingController.getPendingReviews);
+
+//-------- speaking -----------
+router.post(paths.speaking.startTest(),                         protect, speakingController.startTest);
+router.get(paths.speaking.getAttemptState(":attemptId"),        protect, speakingController.getAttemptState);
+router.post(paths.speaking.uploadAnswer(":attemptId"),          protect, speakingController.uploadAnswer);
+router.post(paths.speaking.submitAttempt(":attemptId"),         protect, speakingController.submitAttempt); 
+router.get(paths.speaking.getPendingReviews(),                  protect, speakingController.getPendingReviews);
+router.get
+router.patch(paths.speaking.reviewSubmission(":submissionId"),  protect, speakingController.reviewSubmission);
 
 export default router;
