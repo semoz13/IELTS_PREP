@@ -99,11 +99,11 @@ const getAttemptState = async (attemptId: string, userId: string) => {
     questions.map(async (q) => {
       const submission = await SpeakingSubmission.findOne({
         attemptId: new Types.ObjectId(attemptId),
-        partId: q._id,
+        questionId: q._id,
       });
 
       return {
-        partId:                   q._id,
+        questionId:                   q._id,
         partNumber:               q.partNumber,
         orderIndex:               q.orderIndex,
         prompt:                   q.prompt,
@@ -183,7 +183,7 @@ const uploadAnswer  = async (
   const submission = await SpeakingSubmission.findOneAndUpdate(
     {
       attemptId: new Types.ObjectId(attemptId),
-      partId: new Types.ObjectId(questionId),
+      questionId: new Types.ObjectId(questionId),
     },
     {
       partNumber: question.partNumber,

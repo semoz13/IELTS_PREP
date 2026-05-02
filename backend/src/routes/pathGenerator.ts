@@ -59,9 +59,11 @@ export class PathGenerator {
   speaking = {
     startTest:          () => this.prepend("/speaking/start"),
     getAttemptState:    (attemptId: string) => this.prepend(`/speaking/attempt/${attemptId}`),
-    submitPart:         (attemptId: string) => this.prepend(`/speaking/attempt/${attemptId}/submit`),
-    reviewSubmission:   (submissionId: string) => this.prepend(`/speaking/submissions/${submissionId}/review`),
+    uploadAnswer:       (attemptId: string) => this.prepend(`/speaking/attempt/${attemptId}/upload`),
+    submitAttempt:      (attemptId: string) => this.prepend(`/speaking/attempt/${attemptId}/submit`),
     getPendingReviews:  () => this.prepend("/speaking/reviews/pending"),
+    markUnderReview:    (submissionId: string) => this.prepend(`/speaking/reviews/${submissionId}/under-review`),
+    reviewSubmission:   (submissionId: string) => this.prepend(`/speaking/submissions/${submissionId}/review`),
   };
 
 

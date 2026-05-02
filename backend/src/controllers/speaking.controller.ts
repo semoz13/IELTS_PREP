@@ -88,7 +88,6 @@ const uploadAnswer = async (
 };
 
 
-// multipart/form-data: { partId, transcript?, audio(file) }
 const submitAttempt = async (
   req: Request,
   res: Response, 

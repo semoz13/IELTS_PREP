@@ -7,6 +7,7 @@ import { userController } from "@/controllers/user.controller";
 import { listeningController } from "@/controllers/listening.controller";
 import { writingController } from "@/controllers/writing.controller";
 import { speakingController } from "@/controllers/speaking.controller";
+import { uploadAudio } from "@/middleware/upload.middleware";
 
 const router = Router();
 
@@ -52,12 +53,15 @@ router.patch(paths.writing.reviewSubmission(":submissionId"),   protect, writing
 router.get(paths.writing.getPendingReviews(),                   protect, writingController.getPendingReviews);
 
 //-------- speaking -----------
+//student 
 router.post(paths.speaking.startTest(),                         protect, speakingController.startTest);
 router.get(paths.speaking.getAttemptState(":attemptId"),        protect, speakingController.getAttemptState);
-router.post(paths.speaking.uploadAnswer(":attemptId"),          protect, speakingController.uploadAnswer);
+router.post(paths.speaking.uploadAnswer(":attemptId"),          protect, uploadAudio, speakingController.uploadAnswer);
 router.post(paths.speaking.submitAttempt(":attemptId"),         protect, speakingController.submitAttempt); 
+
+//tracher 
 router.get(paths.speaking.getPendingReviews(),                  protect, speakingController.getPendingReviews);
-router.get
-router.patch(paths.speaking.reviewSubmission(":submissionId"),  protect, speakingController.reviewSubmission);
+router.patch(paths.speaking.markUnderReview(":submissionId"),   protect, speakingController.markUnderReview);
+router.post(paths.speaking.reviewSubmission(":submissionId"),   protect, speakingController.reviewSubmission);
 
 export default router;
