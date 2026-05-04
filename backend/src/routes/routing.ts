@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { authController } from "@/controllers/auth.controller";
-import { protect } from "@/middleware/auth.middleware";
+import { protect, requireRole } from "@/middleware/auth.middleware";
 import { paths } from "@/routes/pathGenerator";
 import { readingController } from "@/controllers/reading.controller";
 import { userController } from "@/controllers/user.controller";
@@ -46,11 +46,14 @@ router.get(paths.listening.submit(":attemptId"),                protect, listeni
 
 
 //-------- writing ------------
+//student
 router.post(paths.writing.startTest(),                          protect, writingController.startTest);
 router.get(paths.writing.getAttemptState(":attemptId"),         protect, writingController.getAttemptState);
 router.post(paths.writing.submitTask(":attemptId"),             protect, writingController.submitTask);
-router.patch(paths.writing.reviewSubmission(":submissionId"),   protect, writingController.reviewSubmission);
-router.get(paths.writing.getPendingReviews(),                   protect, writingController.getPendingReviews);
+
+//teacher
+router.patch(paths.writing.reviewSubmission(":submissionId"),   protect, requireRole("admin"), writingController.reviewSubmission);
+router.get(paths.writing.getPendingReviews(),                   protect, requireRole("admin"), writingController.getPendingReviews);
 
 //-------- speaking -----------
 //student 
