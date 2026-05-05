@@ -1,6 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
+import path from "path";
 import { connectDB } from "@/config/db";
 import { env } from "@/config/env";
 import { errorHandler } from "@/middleware/error.middleware";
@@ -11,6 +12,7 @@ const app = express();
 // ─── Middleware ───────────────────────────────────────────────
 app.use(cors({ origin: env.clientUrl }));
 app.use(express.json());
+app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 
 // ─── Routes ───────────────────────────────────────────────────
 app.use("/api", routing);
@@ -30,7 +32,5 @@ const start = async (): Promise<void> => {
     console.log(`🚀 Server running on http://localhost:${env.port}`);
   });
 };
-
-app.use(express.json());
 
 start();

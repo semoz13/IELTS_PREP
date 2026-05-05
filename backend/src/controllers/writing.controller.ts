@@ -3,6 +3,7 @@ import { Request, Response, NextFunction } from "express";
 import { writingService } from "@/services/writing.service";
 import { StatusCodes } from "http-status-codes";
 import { WritingCriteriaScores } from "@/types/Writing.types";
+import { BadRequestError } from "@/utils/errors";
 
 
 
@@ -13,7 +14,7 @@ const startTest = async (
     next: NextFunction,
 ): Promise<void> => {
     try {
-        const userId =  (req as any).user.userId;
+        const userId =  req.user.userId;
         const section = (req.body.section as "academic" | "general") ?? "academic";
 
         const result = await writingService.startTest(userId, section);
@@ -30,7 +31,7 @@ const getAttemptState = async (
     next: NextFunction,
 ): Promise<void> => {
     try {
-        const userId = (req as any).user.userId;
+        const userId = req.user.userId;
         const { attemptId } = req.params;
 
         const state = await writingService.getAttemptState(attemptId as string, userId);
@@ -58,7 +59,7 @@ const submitTask = async (
     next: NextFunction,
 ): Promise<void> => {
     try {
-        const userId = (req as any).user.userId;
+        const userId = req.user.userId;
         const { attemptId } =req.params;
 
         const { taskId, responseText } = req.body;
@@ -103,7 +104,7 @@ const reviewSubmission = async (
     nextt: NextFunction,
 ): Promise<void> => {
     try {
-        const teacherId = ( req as any ).user.userId;
+        const teacherId = req.user.userId;
         const { submissionId } = req.params;
         const { teacherBand , teacherCriteriaScores , teacherFeedback } = req.body;
 

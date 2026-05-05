@@ -74,3 +74,17 @@ export type AiWritingScore = {
   };
   feedback: string;
 };
+
+// speaking AI types
+export type GeneratedSpeakingQuestion = {
+    partNumber: 1 | 2 | 3;
+    orderIndex: number;
+    prompt: string;
+    preparationTimeSeconds: number;
+    answerTimeSeconds: number;
+};
+
+export type GeneratedSpeakingTest = {
+    title: string;
+    questions: GeneratedSpeakingQuestion[];
+};
