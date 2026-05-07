@@ -22,19 +22,23 @@ export const protect = (
 
   try {
     const decoded = jwt.verify(token, env.jwtAccessSecret);
-    req.user = decoded as {userId:string, role: 'admin' | 'user'};
+    req.user = decoded as {userId:string, role: UserRole };
     next();
   } catch (error) {
     next(error);
   }
 };
 
-// Usage in routing.ts:  requireRole("admin")
+// Usage in routing.ts:  requireRole("teacher")  or  requireRole("admin")
 // Must always be placed AFTER protect, because it reads req.user.
-// In this app: "admin" = teacher,  "user" = student.
+// Role hierarchy:
+//   "admin"   → super admin  — full access to /admin/* routes
+//   "teacher" → content & submission management
+//   "student" → test-taking only
+
 export const requireRole = ( ... roles: UserRole[])=>
   (req:Request, res:Response, next:NextFunction): void => {
-    if (!roles.includes(req.user.role)) {
+    if (!req.user || !roles.includes(req.user.role)) {
       res.status(StatusCodes.FORBIDDEN).json({
         success: false,
         message: "Access denied: insufficient permissions"

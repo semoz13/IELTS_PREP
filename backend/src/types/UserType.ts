@@ -1,6 +1,6 @@
 import { BaseType } from "./BaseType";
 
-export type UserRole = "admin" | "user";
+export type UserRole = "admin" | "teacher" | "student";
 
 export type User = BaseType & {
   name: string;

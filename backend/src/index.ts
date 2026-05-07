@@ -6,6 +6,7 @@ import { connectDB } from "@/config/db";
 import { env } from "@/config/env";
 import { errorHandler } from "@/middleware/error.middleware";
 import routing from "@/routes/routing";
+import mongoose from "mongoose";
 
 const app = express();
 
@@ -22,6 +23,27 @@ app.get("/api/health", (_req, res) => {
   res.json({ success: true, message: "API is running" });
 });
 
+
+/*app.get("/test-db", async (_req, res) => {
+  try {
+    const nativeDb = mongoose.connection.getClient().db();
+    const result = await nativeDb.collection("test").insertOne({
+      message: "MongoDB works!",
+      createdAt: new Date(),
+    });
+
+    res.json({
+      success: true,
+      insertedId: result.insertedId,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      success: false,
+      error,
+    });
+  }
+});*/
 // ─── Error Handler ────────────────────────────────────────────
 app.use(errorHandler);
 

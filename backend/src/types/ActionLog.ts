@@ -7,6 +7,7 @@ export type ActionType =
   | "START_TEST"
   | "SUBMIT_TEST"
   | "SAVE_ANSWER"
+  | "UPLOAD_AUDIO"
   | "UPDATE_PROFILE"
   | "DELETE_ACCOUNT"
   | "ACCESS_RESOURCE"

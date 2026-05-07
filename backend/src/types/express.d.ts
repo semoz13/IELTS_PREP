@@ -5,8 +5,7 @@ declare global {
     interface Request {
       user: {
         userId: string;
-        role: "admin" | "user";
-      };
+        role: import("./UserType").UserRole};
     }
   }
 }
