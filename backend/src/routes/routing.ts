@@ -11,6 +11,8 @@ import { uploadAudio } from "@/middleware/upload.middleware";
 import { actionLogController } from "@/controllers/actionLog.controller";
 import { createActionLogger } from "@/middleware/actionLog.middleware";
 import { adminController } from "@/controllers/admin.controller";
+import { chatWithAI } from "@/controllers/aiChat.controller";
+import { checkAIHealth } from "@/controllers/aiChat.controller";
 
 const router = Router();
 
@@ -210,6 +212,10 @@ router.patch(paths.speaking.reviewSubmission(":submissionId"),   protect,createA
   speakingController.reviewSubmission,
 );
 
+
+// ─── AI Chat ─────────────────────────────────────────────────
+router.post('/ai/chat', protect, chatWithAI);      // protected – only logged-in users
+router.get('/ai/health', checkAIHealth);           // public health check
 
 
 
