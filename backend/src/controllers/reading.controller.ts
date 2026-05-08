@@ -8,7 +8,7 @@ const startTest = async (
   next: NextFunction,
 ): Promise<void> => {
   try {
-    const userId = (req as any).user.userId;
+    const userId = req.user.userId;
     const {section} = req.body;
     if (!section || !['academic' , 'general'].includes(section)){
 
@@ -31,7 +31,7 @@ const getAttemptState = async (
   next: NextFunction,
 ): Promise<void> => {
   try {
-    const userId = (req as any).user.userId;
+    const userId = req.user.userId;
     const { attemptId } = req.params;
 
     const state = await readingService.getAttemptState(
@@ -60,7 +60,7 @@ const saveAnswer = async (
   next: NextFunction,
 ): Promise<void> => {
   try {
-    const userId = (req as any).user.userId;
+    const userId = req.user.userId;
     const { attemptId } = req.params as { attemptId: string };
     const { questionId, choiceId, textAnswer } = req.body;
 
@@ -101,7 +101,7 @@ const updatePassageTiming = async (
   next: NextFunction,
 ): Promise<void> => {
   try {
-    const userId = (req as any).user.userId;
+    const userId = req.user.userId;
     const { attemptId } = req.params as { attemptId: string };
     const { passageId, timeSpentSeconds } = req.body;
 
@@ -139,7 +139,7 @@ const submitAttempt = async (
   next: NextFunction,
 ): Promise<void> => {
   try {
-    const userId = (req as any).user.userId;
+    const userId = req.user.userId;
     const { attemptId } = req.params as { attemptId: string };
 
     const result = await readingService.submitAttempt(attemptId, userId);

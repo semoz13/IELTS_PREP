@@ -67,6 +67,18 @@ export class PathGenerator {
     getStatistics: () => this.prepend("/logs/statistics"),
     clear: () => this.prepend("/logs"),
   };
+
+  speaking = {
+    startTest:          () => this.prepend("/speaking/start"),
+    getAttemptState:    (attemptId: string) => this.prepend(`/speaking/attempt/${attemptId}`),
+    uploadAnswer:       (attemptId: string) => this.prepend(`/speaking/attempt/${attemptId}/upload`),
+    submitAttempt:      (attemptId: string) => this.prepend(`/speaking/attempt/${attemptId}/submit`),
+    getPendingReviews:  () => this.prepend("/speaking/reviews/pending"),
+    markUnderReview:    (submissionId: string) => this.prepend(`/speaking/reviews/${submissionId}/under-review`),
+    reviewSubmission:   (submissionId: string) => this.prepend(`/speaking/submissions/${submissionId}/review`),
+  };
+
+
 }
 
 export const paths = new PathGenerator();

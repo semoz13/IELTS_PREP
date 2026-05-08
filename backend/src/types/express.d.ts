@@ -3,10 +3,9 @@ export {};
 declare global {
   namespace Express {
     interface Request {
-      user?: {
+      user: {
         userId: string;
-        role: "admin" | "user";
-      };
+        role: import("./UserType").UserRole};
     }
   }
 }

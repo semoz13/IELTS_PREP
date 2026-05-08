@@ -17,7 +17,7 @@ const getMe = async (
   next: NextFunction,
 ): Promise<void> => {
   try {
-    const user = await User.findById((req as any).user.userId);
+    const user = await User.findById(req.user.userId);
     if (!user) {
       res
         .status(StatusCodes.NOT_FOUND)

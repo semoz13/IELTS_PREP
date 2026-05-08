@@ -29,8 +29,8 @@ const UserSchema = new Schema<UserDocument>(
     },
     role: {
       type: String,
-      enum: ["admin", "user"],
-      default: "user",
+      enum: ["admin", "teacher", "student"],
+      default: "student",
     },
     avatar: {
       type: String,
