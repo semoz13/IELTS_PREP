@@ -68,7 +68,7 @@ export const getClientIp = (req: Request): string => {
 export const createActionLogger =
   (context: ActionLogContext) =>
   (req: Request, res: Response, next: NextFunction): void => {
-    const userId = (req as any).user?.id;
+    const userId = req.user.userId;
 
     if (!userId) {
       next();
