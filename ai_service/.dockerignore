@@ -1,0 +1,25 @@
+# Virtual environment — recreated during image build
+.venv/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Secrets — injected at runtime via docker-compose env_file
+.env
+
+# Roy's model files — volume-mounted at runtime, not baked into image
+# (keeps the image from being 500 MB heavier)
+*.pt
+
+# Raw audio files — not needed if listening_cache.json is already built
+# Run: docker compose exec ai_service python listening/cache_builder.py  (one-time)
+listening/audio/
+
+# Model training artifacts — not part of the serving code
+AI/
+
+# Logs
+*.log

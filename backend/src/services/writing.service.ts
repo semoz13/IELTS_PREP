@@ -37,7 +37,7 @@ const startTest = async (
         isAiGenerated: true,
     });
 
-    // 3. Persist Task 1
+    // 3. Persist Task 1 — store aiRowId so scoring can reference the dataset row
     const task1 = await WritingTask.create({
         testId: test._id,
         taskType: "task1",
@@ -45,10 +45,11 @@ const startTest = async (
         prompt: generated.task1.prompt,
         imageDescription: generated.task1.imageDescription ?? null,
         minWordCount: generated.task1.minWordCount,
-        timeAllowedMinutes: generated.task1.timeAllowedMinutes
+        timeAllowedMinutes: generated.task1.timeAllowedMinutes,
+        aiRowId: (generated as any).task1RowId ?? null,
     });
 
-    // 4. Persist Task 2
+    // 4. Persist Task 2 — store aiRowId for scoring
     const task2 = await WritingTask.create({
         testId: test._id,
         taskType: "task2",
@@ -57,6 +58,7 @@ const startTest = async (
         imageDescription: null,
         minWordCount: generated.task2.minWordCount,
         timeAllowedMinutes: generated.task2.timeAllowedMinutes,
+        aiRowId: (generated as any).task2RowId ?? null,
     });
 
     // 5. Open the attempt
@@ -181,6 +183,7 @@ const submitTask = async (
         task.section,
         task.prompt,
         responseText,
+        (task as any).aiRowId ?? 0,
     );
 
     // Upsert: if the student re-submits the same task, overwrite the previous attempt

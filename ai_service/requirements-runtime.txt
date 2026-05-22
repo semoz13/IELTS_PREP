@@ -1,0 +1,33 @@
+# Runtime dependencies — install this to run the service.
+# (requirements.txt also includes the one-time artifact-builder deps; skip those for now)
+
+# ── Web framework ──────────────────────────────────────────────────────────────
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.6
+python-multipart>=0.0.9
+python-dotenv>=1.0
+
+# ── Numerics / ML commons ─────────────────────────────────────────────────────
+numpy>=1.26
+scikit-learn>=1.4
+joblib>=1.3
+
+# ── Chat (Basel) ──────────────────────────────────────────────────────────────
+sentence-transformers>=2.7
+
+# ── Reading (Jawa) ────────────────────────────────────────────────────────────
+google-generativeai>=0.8
+transformers>=4.40
+torch>=2.2
+
+# ── Writing (Roy) ─────────────────────────────────────────────────────────────
+anthropic>=0.30
+datasets>=2.19
+
+# ── Confidence (Rami) ─────────────────────────────────────────────────────────
+librosa>=0.10
+soundfile>=0.12
+
+# ── Listening (Jawa) — Whisper only needed for cache_builder.py, not for serving
+openai-whisper>=20231117

@@ -1,0 +1,37 @@
+# ── Web framework ──────────────────────────────────────────────────────────────
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.6
+python-multipart>=0.0.9   # file upload support
+python-dotenv>=1.0
+
+# ── Numerics / ML commons ─────────────────────────────────────────────────────
+numpy>=1.26
+scikit-learn>=1.4
+joblib>=1.3
+
+# ── Basel (chat) ──────────────────────────────────────────────────────────────
+sentence-transformers>=2.7
+
+# Basel artifact-builder only (one-time, can be removed after build)
+datasets>=2.19
+pandas>=2.2
+bertopic>=0.16
+umap-learn>=0.5
+hdbscan>=0.8
+
+# ── Jawa (reading + listening) ────────────────────────────────────────────────
+google-generativeai>=0.8
+transformers>=4.40
+torch>=2.2
+
+# Listening / Whisper
+openai-whisper>=20231117
+librosa>=0.10          # also used by Rami confidence model
+soundfile>=0.12
+
+# ── Roy (writing + speaking) ──────────────────────────────────────────────────
+anthropic>=0.30
+
+# ── Rami (confidence) ─────────────────────────────────────────────────────────
+# librosa already listed above

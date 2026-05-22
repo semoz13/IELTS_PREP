@@ -1,0 +1,75 @@
+networks:
+  app_net:
+    driver: bridge
+
+volumes:
+  # HuggingFace model cache — sentence-transformers and transformers download
+  # models on first use. Persisting this volume avoids re-downloading (~400 MB+)
+  # on every container restart.
+  hf_cache:
+
+services:
+
+  # ── AI Service (Python FastAPI, port 8000) ──────────────────────────────────
+  ai_service:
+    build:
+      context: ./ai_service
+      dockerfile: Dockerfile
+    container_name: ielts_ai_service
+    restart: unless-stopped
+    networks:
+      - app_net
+    env_file:
+      # Provides: GEMINI_API_KEY, ANTHROPIC_API_KEY
+      - ./ai_service/.env
+    environment:
+      # Point writing module at the volume-mounted .pt files
+      - TASK1_MODEL_PATH=/models/task1_model_best.pt
+      - TASK2_MODEL_PATH=/models/task2_model_best.pt
+    volumes:
+      # Roy's model files (253 MB each) — mount read-only, never bake into image
+      # On the VPS: scp task1_model_best.pt task2_model_best.pt  ~/IELTS_PREP/models/
+      - ./models:/models:ro
+      # Persist downloaded HuggingFace weights across container restarts
+      - hf_cache:/root/.cache/huggingface
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      # start_period: grace window before retries start counting.
+      # Set high because first boot downloads sentence-transformers weights (~400 MB).
+      # Subsequent boots are fast (weights cached in hf_cache volume).
+      start_period: 300s
+      retries: 5
+    # NOT port-exposed — only the backend reaches it via the internal network
+
+  # ── Backend (Node.js Express, port 4000) ────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ielts_backend
+    restart: unless-stopped
+    networks:
+      - app_net
+    env_file:
+      # Provides: PORT, MONGODB_URI, JWT_ACCESS_SECRET, JWT_REFRESH_SECRET,
+      #           JWT_ACCESS_EXPIRES_IN, JWT_REFRESH_EXPIRES_IN, CLIENT_URL
+      - ./backend/.env
+    environment:
+      # Override the localhost URL from .env with the Docker service name
+      - AI_SERVICE_URL=http://ai_service:8000
+    ports:
+      - "4000:4000"
+    volumes:
+      # User-uploaded audio/documents persist across deploys
+      - ./uploads:/app/uploads
+    depends_on:
+      ai_service:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/api/health"]
+      interval: 30s
+      timeout: 10s
+      start_period: 30s
+      retries: 3

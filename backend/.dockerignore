@@ -1,0 +1,17 @@
+# Never install from node_modules on the host — always npm ci inside the image
+node_modules/
+
+# TypeScript build output — compiled fresh inside the builder stage
+dist/
+
+# Secrets — injected at runtime via docker-compose env_file
+.env
+
+# User uploads — persisted via a bind-mount volume, not baked into the image
+uploads/
+
+# Logs
+*.log
+
+# Editor config — not needed inside the container
+.vscode/

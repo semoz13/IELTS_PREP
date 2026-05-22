@@ -25,6 +25,7 @@ export type WritingTask = BaseType & {
     imageDescription?: string | null; // for task 1 descripe chart data
     minWordCount: number;
     timeAllowedMinutes: number;
+    aiRowId?: number | null;          // HuggingFace dataset row ID used by Roy's writing model
 };
 
 export type WritingSubmission = BaseType & { 

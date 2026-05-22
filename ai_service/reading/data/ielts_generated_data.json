@@ -1,0 +1,113 @@
+[
+  {
+    "id": "P1",
+    "title": "fast fashion environmental impact",
+    "text": "Fast fashion, characterised by its rapid production of inexpensive, trendy clothing, exerts a profound and multifaceted environmental toll. The industry's insatiable demand for raw materials, particularly conventional cotton, leads to immense water consumption and extensive pesticide use, depleting freshwater resources and degrading soil quality. Furthermore, the dyeing and finishing processes involve a vast array of toxic chemicals, which are often discharged untreated into waterways, contaminating ecosystems and posing severe health risks. The prevalence of synthetic fabrics, such as polyester and nylon, exacerbates the problem by shedding microplastics during washing, polluting oceans and entering the food chain. Moreover, the inherent disposability of fast fashion garments results in an astonishing volume of textile waste, rapidly filling landfills where non-biodegradable materials persist for centuries. The globalised supply chain, encompassing manufacturing and transportation, also contributes significantly to greenhouse gas emissions, intensifying climate change. Consequently, this unsustainable model necessitates urgent re-evaluation and a shift towards more circular and ethical practices to mitigate its devastating ecological footprint.",
+    "questions": [
+      {
+        "q": "What is a key characteristic of fast fashion regarding its production and cost?",
+        "a": "Its rapid production of inexpensive, trendy clothing.",
+        "a_start": 0
+      },
+      {
+        "q": "What two environmental problems are linked to the industry's demand for conventional cotton?",
+        "a": "Immense water consumption and extensive pesticide use.",
+        "a_start": 0
+      },
+      {
+        "q": "How do toxic chemicals from the dyeing and finishing processes typically contaminate ecosystems?",
+        "a": "They are often discharged untreated into waterways.",
+        "a_start": 0
+      },
+      {
+        "q": "Which problematic materials are released by synthetic fabrics such as polyester and nylon during washing?",
+        "a": "Microplastics.",
+        "a_start": 0
+      },
+      {
+        "q": "What is the primary consequence of the inherent disposability of fast fashion garments?",
+        "a": "An astonishing volume of textile waste.",
+        "a_start": 0
+      },
+      {
+        "q": "Besides manufacturing, what other aspect of the globalised supply chain contributes significantly to greenhouse gas emissions?",
+        "a": "Transportation.",
+        "a_start": 0
+      }
+    ]
+  },
+  {
+    "id": "P2",
+    "title": "sleep and memory neuroscience",
+    "text": "Neuroscientific research has profoundly elucidated the intricate relationship between sleep and memory consolidation, demonstrating that sleep is not merely a period of inactivity but a crucial process for learning and retention. During sleep, particularly slow-wave sleep (SWS) within non-rapid eye movement (NREM) stages, newly acquired declarative memories are reactivated and transferred from the hippocampus, a temporary storage site, to the neocortex for long-term storage. This process, known as systems consolidation, involves synchronized neural oscillations that facilitate synaptic plasticity, strengthening the neural pathways associated with these memories. Furthermore, rapid eye movement (REM) sleep is thought to play a significant role in the consolidation of procedural and emotional memories, contributing to problem-solving and creative insights. Disruptions to normal sleep architecture have been consistently linked to impaired memory formation and recall, underscoring the indispensable role of adequate sleep for optimal cognitive function. Understanding these neurobiological mechanisms offers critical insights into learning disorders and the development of strategies to enhance memory.",
+    "questions": [
+      {
+        "q": "What is the specific term used in the passage for the process by which newly acquired declarative memories are transferred from temporary storage to long-term storage?",
+        "a": "This process, known as systems consolidation.",
+        "a_start": 0
+      },
+      {
+        "q": "During which specific sleep stage are newly acquired declarative memories reactivated and transferred from the hippocampus to the neocortex?",
+        "a": "During sleep, particularly slow-wave sleep (SWS) within non-rapid eye movement (NREM) stages.",
+        "a_start": 0
+      },
+      {
+        "q": "The passage describes the hippocampus as serving what specific function regarding newly acquired declarative memories?",
+        "a": "the hippocampus, a temporary storage site.",
+        "a_start": 0
+      },
+      {
+        "q": "What two main mechanisms are mentioned as being involved in systems consolidation to facilitate synaptic plasticity?",
+        "a": "synchronized neural oscillations that facilitate synaptic plasticity.",
+        "a_start": 0
+      },
+      {
+        "q": "What negative effect has consistently been linked to disruptions in normal sleep architecture?",
+        "a": "impaired memory formation and recall.",
+        "a_start": 0
+      },
+      {
+        "q": "Beyond declarative memories, what types of memories and cognitive functions are particularly associated with the role of REM sleep in consolidation?",
+        "a": "the consolidation of procedural and emotional memories, contributing to problem-solving and creative insights.",
+        "a_start": 756
+      }
+    ]
+  },
+  {
+    "id": "P3",
+    "title": "Silk Road economic importance",
+    "text": "The Silk Road, a historical network of interconnected trade routes spanning millennia, was of unparalleled economic significance, profoundly shaping ancient economies and facilitating the rise of numerous civilizations. Its primary importance lay in enabling the widespread exchange of a vast array of goods, most notably Chinese silk, which became a coveted luxury commodity in the Roman Empire and across other distant lands. Beyond silk, these routes facilitated the movement of spices, precious metals, gems, textiles, and other valuable commodities, establishing complex supply chains and fostering specialized production across diverse regions. This extensive mercantile activity not only generated immense wealth for empires and traders but also stimulated the development of crucial economic infrastructure, including bustling market towns, caravanserais, and sophisticated financial systems. Furthermore, the economic interconnectedness fostered by the Silk Road transcended mere commodity exchange; it also facilitated the transfer of technologies, agricultural practices, and innovative ideas, which yielded indirect but profound economic benefits by improving productivity and creating new demands. Thus, the Silk Road was a dynamic economic artery that fueled prosperity, spurred innovation, and laid foundational patterns for globalized trade.",
+    "questions": [
+      {
+        "q": "What was the Silk Road primarily described as in terms of its historical nature?",
+        "a": "a historical network of interconnected trade routes spanning millennia",
+        "a_start": 15
+      },
+      {
+        "q": "According to the passage, what was the primary importance of the Silk Road?",
+        "a": "enabling the widespread exchange of a vast array of goods",
+        "a_start": 250
+      },
+      {
+        "q": "Beyond Chinese silk, what other valuable commodities were facilitated by these routes?",
+        "a": "spices, precious metals, gems, textiles, and other valuable commodities",
+        "a_start": 482
+      },
+      {
+        "q": "What crucial economic infrastructure did the extensive mercantile activity of the Silk Road stimulate the development of?",
+        "a": "bustling market towns, caravanserais, and sophisticated financial systems",
+        "a_start": 826
+      },
+      {
+        "q": "In addition to commodity exchange, what else did the economic interconnectedness fostered by the Silk Road facilitate?",
+        "a": "the transfer of technologies, agricultural practices, and innovative ideas",
+        "a_start": 1029
+      },
+      {
+        "q": "What indirect but profound economic benefits resulted from the transfer of technologies, agricultural practices, and innovative ideas along the Silk Road?",
+        "a": "improving productivity and creating new demands",
+        "a_start": 1162
+      }
+    ]
+  }
+]

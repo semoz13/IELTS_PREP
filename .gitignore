@@ -1,0 +1,26 @@
+# ── Model files (254 MB each — share via Google Drive, never commit) ──────────
+models/*.pt
+
+# ── Python (ai_service) ───────────────────────────────────────────────────────
+ai_service/.venv/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+ai_service/.env
+
+# ── Node (backend) ────────────────────────────────────────────────────────────
+# backend/.gitignore covers node_modules/, dist/, .env, uploads/
+# duplicated here so `git status` at the repo root stays clean
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/uploads/
+
+# ── Node (frontend) ───────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*

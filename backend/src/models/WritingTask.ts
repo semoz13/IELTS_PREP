@@ -40,6 +40,10 @@ const WritingTaskSchema = new Schema<WritingTaskDocument>(
             type: Number,
             required: true,
         },
+        aiRowId: {
+            type: Number,
+            default: null,
+        },
     },
     { timestamps: true },
 );

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.log
+
+# Roy's large model files — store separately, never commit
+*.pt
+
+# Artifact build outputs — regenerate with build_artifacts.py
+# (chat/artifacts kept in repo intentionally)

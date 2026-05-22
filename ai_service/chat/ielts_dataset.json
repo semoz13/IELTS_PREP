@@ -1,0 +1,2602 @@
+[
+  {
+    "id": 1,
+    "intent": "definition",
+    "questions": [
+      "What is IELTS?",
+      "Explain IELTS exam",
+      "What does IELTS mean?",
+      "Define IELTS test",
+      "Give an overview of IELTS"
+    ],
+    "keywords": [ "IELTS", "definition", "overview", "meaning" ],
+    "answer": "IELTS is an international English language proficiency test designed for people who want to study, work, or migrate to English-speaking countries. It assesses four skills: Listening, Reading, Writing, and Speaking."
+  },
+  {
+    "id": 2,
+    "intent": "purpose",
+    "questions": [
+      "Why is IELTS required?",
+      "What is the purpose of IELTS?",
+      "Why do people take IELTS?",
+      "What is IELTS used for?",
+      "Why should I take IELTS?"
+    ],
+    "keywords": [ "purpose", "IELTS use", "reason" ],
+    "answer": "IELTS is required to assess English language proficiency for study, work, or migration in English-speaking countries. Institutions and immigration authorities use IELTS scores as proof of language ability."
+  },
+  {
+    "id": 3,
+    "intent": "structure",
+    "questions": [
+      "What are the sections of IELTS?",
+      "How is IELTS structured?",
+      "What parts are in IELTS exam?",
+      "What does IELTS include?",
+      "How many sections are in IELTS?"
+    ],
+    "keywords": [ "sections", "structure" ],
+    "answer": "The IELTS exam consists of four sections: Listening, Reading, Writing, and Speaking. Each section evaluates a different language skill."
+  },
+  {
+    "id": 4,
+    "intent": "duration",
+    "questions": [
+      "How long is the IELTS exam?",
+      "What is the duration of IELTS?",
+      "How much time does IELTS take?",
+      "IELTS exam length?",
+      "Total time of IELTS test?"
+    ],
+    "keywords": [ "duration", "time" ],
+    "answer": "The total duration of the IELTS test is approximately 2 hours and 45 minutes. The Listening, Reading, and Writing sections are completed in one sitting, while the Speaking test may be scheduled separately."
+  },
+  {
+    "id": 5,
+    "intent": "types",
+    "questions": [
+      "What types of IELTS are there?",
+      "How many IELTS types exist?",
+      "Different IELTS exams?",
+      "What is IELTS Academic and General?",
+      "Explain IELTS types"
+    ],
+    "keywords": [ "types", "academic", "general" ],
+    "answer": "There are two main types of IELTS: Academic and General Training. Academic is for higher education and professional registration, while General Training is for work experience, training programs, or migration."
+  },
+  {
+    "id": 6,
+    "intent": "validity",
+    "questions": [
+      "How long is IELTS valid?",
+      "IELTS result validity period?",
+      "When does IELTS expire?",
+      "How many years is IELTS valid?",
+      "Does IELTS expire?"
+    ],
+    "keywords": [ "validity", "expire" ],
+    "answer": "IELTS results are valid for two years from the test date. After that period, the scores are no longer considered valid."
+  },
+  {
+    "id": 7,
+    "intent": "retake",
+    "questions": [
+      "Can I retake IELTS?",
+      "Is it possible to take IELTS again?",
+      "How many times can I take IELTS?",
+      "Can I repeat IELTS exam?",
+      "Is there a limit to IELTS attempts?"
+    ],
+    "keywords": [ "retake", "repeat" ],
+    "answer": "Yes, you can retake IELTS as many times as you wish. There is no limit on the number of attempts, but you must register and pay for each test."
+  },
+  {
+    "id": 8,
+    "intent": "one_skill_retake",
+    "questions": [
+      "What is IELTS One Skill Retake?",
+      "Explain One Skill Retake in IELTS",
+      "Can I retake one section of IELTS?",
+      "What does IELTS One Skill Retake mean?",
+      "Is it possible to repeat only one IELTS part?"
+    ],
+    "keywords": [ "one skill retake", "retake section" ],
+    "answer": "IELTS One Skill Retake allows candidates to retake one section of the test instead of the full exam, depending on availability in their country."
+  },
+  {
+    "id": 9,
+    "intent": "registration",
+    "questions": [
+      "How can I register for IELTS?",
+      "How do I book IELTS exam?",
+      "Where to register for IELTS?",
+      "Steps to apply for IELTS?",
+      "How to sign up for IELTS?"
+    ],
+    "keywords": [ "registration", "apply" ],
+    "answer": "You can register for IELTS online through official IELTS websites such as the British Council or IDP. You need to choose a test date, location, and complete the application form."
+  },
+  {
+    "id": 10,
+    "intent": "cost",
+    "questions": [
+      "How much does IELTS cost?",
+      "What is IELTS exam fee?",
+      "Price of IELTS test?",
+      "How expensive is IELTS?",
+      "IELTS registration fee?"
+    ],
+    "keywords": [ "cost", "price" ],
+    "answer": "The cost of the IELTS test varies by country but typically ranges between $150 and $250 USD. You should check the official IELTS website in your country for exact fees."
+  },
+  {
+    "id": 11,
+    "intent": "scoring",
+    "questions": [
+      "How is IELTS scored?",
+      "What is IELTS scoring system?",
+      "How are IELTS bands calculated?",
+      "Explain IELTS band scores",
+      "How does IELTS scoring work?"
+    ],
+    "keywords": [ "score", "band" ],
+    "answer": "IELTS uses a band score system ranging from 0 to 9. Each section is scored individually, and the overall score is the average of the four sections."
+  },
+  {
+    "id": 12,
+    "intent": "band_requirement",
+    "questions": [
+      "What IELTS score is required?",
+      "What band do I need in IELTS?",
+      "Minimum IELTS score?",
+      "Required IELTS band?",
+      "What is a good IELTS score?"
+    ],
+    "keywords": [ "required score" ],
+    "answer": "The required IELTS score depends on your goal. Most universities require a band score between 6.0 and 7.5, while higher scores may be needed for competitive programs."
+  },
+  {
+    "id": 13,
+    "intent": "listening",
+    "questions": [
+      "What is IELTS Listening section?",
+      "Explain IELTS Listening test",
+      "What happens in IELTS Listening?",
+      "Details of IELTS Listening?",
+      "How does IELTS Listening work?"
+    ],
+    "keywords": [ "listening" ],
+    "answer": "The IELTS Listening section consists of four recordings and 40 questions. It tests your ability to understand spoken English in different contexts."
+  },
+  {
+    "id": 14,
+    "intent": "reading",
+    "questions": [
+      "What is IELTS Reading section?",
+      "Explain IELTS Reading test",
+      "How does IELTS Reading work?",
+      "Details of IELTS Reading?",
+      "What happens in IELTS Reading?"
+    ],
+    "keywords": [ "reading" ],
+    "answer": "The IELTS Reading section includes passages and questions that test your reading comprehension. It contains 40 questions and lasts 60 minutes."
+  },
+  {
+    "id": 15,
+    "intent": "writing",
+    "questions": [
+      "What is IELTS Writing section?",
+      "Explain IELTS Writing tasks",
+      "What do you do in IELTS Writing?",
+      "How does IELTS Writing work?",
+      "Details of IELTS Writing?"
+    ],
+    "keywords": [ "writing" ],
+    "answer": "The IELTS Writing section includes two tasks: Task 1 and Task 2. It assesses your ability to write clearly and coherently in English."
+  },
+  {
+    "id": 16,
+    "intent": "speaking",
+    "questions": [
+      "What is IELTS Speaking test?",
+      "Explain IELTS Speaking section",
+      "How does IELTS Speaking work?",
+      "What happens in IELTS Speaking?",
+      "Details of IELTS Speaking?"
+    ],
+    "keywords": [ "speaking" ],
+    "answer": "The IELTS Speaking test is a face-to-face interview with an examiner. It lasts 11–14 minutes and evaluates your spoken English skills."
+  },
+  {
+    "id": 17,
+    "intent": "format",
+    "questions": [
+      "Is IELTS computer-based or paper-based?",
+      "What formats are available for IELTS?",
+      "Can I take IELTS on computer?",
+      "IELTS formats?",
+      "Paper vs computer IELTS?"
+    ],
+    "keywords": [ "format" ],
+    "answer": "IELTS is available in both computer-based and paper-based formats. The content, scoring, and difficulty level are the same in both formats."
+  },
+  {
+    "id": 18,
+    "intent": "results_time",
+    "questions": [
+      "When are IELTS results released?",
+      "How long to get IELTS results?",
+      "IELTS result time?",
+      "When will I receive IELTS score?",
+      "How fast are IELTS results?"
+    ],
+    "keywords": [ "results time" ],
+    "answer": "IELTS results are usually available within 3–5 days for computer-based tests and 13 days for paper-based tests."
+  },
+  {
+    "id": 19,
+    "intent": "difficulty",
+    "questions": [
+      "Is IELTS difficult?",
+      "How hard is IELTS exam?",
+      "Is IELTS easy or hard?",
+      "IELTS difficulty level?",
+      "Is IELTS challenging?"
+    ],
+    "keywords": [ "difficulty" ],
+    "answer": "The difficulty of IELTS depends on your English proficiency. With proper preparation and practice, most candidates can achieve their desired score."
+  },
+  {
+    "id": 20,
+    "intent": "preparation",
+    "questions": [
+      "How can I prepare for IELTS?",
+      "Best way to study for IELTS?",
+      "How to get ready for IELTS exam?",
+      "IELTS preparation tips?",
+      "How to practice for IELTS?"
+    ],
+    "keywords": [ "preparation" ],
+    "answer": "To prepare for IELTS, practice all four skills regularly, take mock tests, improve your vocabulary, and familiarize yourself with the test format."
+  },
+    {
+      "id": 21,
+      "intent": "registration_deadline",
+      "questions": [
+        "When should I register for IELTS?",
+        "How early should I book IELTS?",
+        "IELTS registration deadline?",
+        "When is the last date to apply for IELTS?",
+        "How far in advance should I register for IELTS?"
+      ],
+      "keywords": [ "registration", "deadline" ],
+      "answer": "It is recommended to register for IELTS at least 2–4 weeks before your preferred test date to secure availability."
+    },
+    {
+      "id": 22,
+      "intent": "documents",
+      "questions": [
+        "What documents are required for IELTS?",
+        "What do I need to register for IELTS?",
+        "IELTS registration requirements?",
+        "Which ID is needed for IELTS?",
+        "Documents for IELTS exam?"
+      ],
+      "keywords": [ "documents", "ID" ],
+      "answer": "You need a valid passport or national ID (depending on your country) to register for IELTS. The same ID must be presented on the test day."
+    },
+    {
+      "id": 23,
+      "intent": "age_limit",
+      "questions": [
+        "What is the age limit for IELTS?",
+        "Is there a minimum age for IELTS?",
+        "Can children take IELTS?",
+        "IELTS age requirement?",
+        "Who can take IELTS?"
+      ],
+      "keywords": [ "age" ],
+      "answer": "There is no strict age limit for IELTS, but it is generally recommended for candidates aged 16 and above."
+    },
+    {
+      "id": 24,
+      "intent": "reschedule",
+      "questions": [
+        "Can I reschedule my IELTS test?",
+        "Is it possible to change IELTS date?",
+        "How to reschedule IELTS exam?",
+        "Can I postpone IELTS?",
+        "Change IELTS test date?"
+      ],
+      "keywords": [ "reschedule", "change date" ],
+      "answer": "Yes, you can reschedule your IELTS test date, but you must request it at least five weeks before the test date. Additional fees may apply."
+    },
+    {
+      "id": 25,
+      "intent": "cancel",
+      "questions": [
+        "Can I cancel my IELTS test?",
+        "How to cancel IELTS exam?",
+        "Is IELTS cancellation allowed?",
+        "Can I get refund if I cancel IELTS?",
+        "Cancel IELTS registration?"
+      ],
+      "keywords": [ "cancel", "refund" ],
+      "answer": "Yes, you can cancel your IELTS test. You may receive a partial refund if you cancel within the allowed time frame, depending on the test center's policy."
+    },
+    {
+      "id": 26,
+      "intent": "late_arrival",
+      "questions": [
+        "What happens if I am late for IELTS?",
+        "Can I enter IELTS exam late?",
+        "IELTS late policy?",
+        "What if I miss IELTS test?",
+        "Arriving late to IELTS?"
+      ],
+      "keywords": [ "late" ],
+      "answer": "If you arrive late for the IELTS test, you may not be allowed to enter the exam room and could lose your test fee."
+    },
+    {
+      "id": 27,
+      "intent": "items_allowed",
+      "questions": [
+        "What can I bring to IELTS exam?",
+        "Allowed items in IELTS?",
+        "What should I carry for IELTS?",
+        "Can I bring phone to IELTS?",
+        "IELTS test rules for items?"
+      ],
+      "keywords": [ "items", "rules" ],
+      "answer": "You are only allowed to bring your ID and essential stationery. Electronic devices, including mobile phones, are not allowed in the exam room."
+    },
+    {
+      "id": 28,
+      "intent": "results_check",
+      "questions": [
+        "How can I check IELTS results?",
+        "Where to see IELTS score?",
+        "Check IELTS result online?",
+        "How do I get IELTS results?",
+        "IELTS score checking process?"
+      ],
+      "keywords": [ "results" ],
+      "answer": "You can check your IELTS results online through the official IELTS website or receive a Test Report Form from your test center."
+    },
+    {
+      "id": 29,
+      "intent": "results_send",
+      "questions": [
+        "Can IELTS send results to universities?",
+        "How to send IELTS score to institutions?",
+        "Does IELTS send scores directly?",
+        "IELTS score reporting?",
+        "Send IELTS results to universities?"
+      ],
+      "keywords": [ "send results" ],
+      "answer": "Yes, IELTS can send your scores directly to universities or organizations. You can select institutions during registration or request it later."
+    },
+    {
+      "id": 30,
+      "intent": "band_9",
+      "questions": [
+        "What does band 9 mean in IELTS?",
+        "Explain IELTS band 9 score",
+        "Is band 9 perfect in IELTS?",
+        "Highest IELTS score meaning?",
+        "What is band 9 level?"
+      ],
+      "keywords": [ "band 9" ],
+      "answer": "Band 9 in IELTS represents an expert user who has full operational command of the English language with complete accuracy and fluency."
+    },
+    {
+      "id": 31,
+      "intent": "band_6",
+      "questions": [
+        "What does band 6 mean in IELTS?",
+        "Is band 6 good in IELTS?",
+        "Explain IELTS band 6",
+        "Band 6 English level?",
+        "What level is band 6?"
+      ],
+      "keywords": [ "band 6" ],
+      "answer": "Band 6 indicates a competent user who has an effective command of English despite some inaccuracies and misunderstandings."
+    },
+    {
+      "id": 32,
+      "intent": "improve_score",
+      "questions": [
+        "How can I improve my IELTS score?",
+        "Tips to increase IELTS band?",
+        "How to get higher IELTS score?",
+        "Improve IELTS performance?",
+        "Ways to boost IELTS score?"
+      ],
+      "keywords": [ "improve score" ],
+      "answer": "To improve your IELTS score, practice regularly, focus on weak areas, expand vocabulary, and take practice tests under exam conditions."
+    },
+    {
+      "id": 33,
+      "intent": "speaking_recorded",
+      "questions": [
+        "Is IELTS Speaking recorded?",
+        "Do they record IELTS Speaking?",
+        "Is speaking test monitored?",
+        "IELTS speaking recording?",
+        "Are IELTS interviews recorded?"
+      ],
+      "keywords": [ "speaking recording" ],
+      "answer": "Yes, the IELTS Speaking test is recorded for quality and monitoring purposes."
+    },
+    {
+      "id": 34,
+      "intent": "computer_vs_paper",
+      "questions": [
+        "Is computer IELTS easier than paper?",
+        "Which is better computer or paper IELTS?",
+        "Computer vs paper IELTS difference?",
+        "Should I take computer IELTS?",
+        "Which IELTS format is easier?"
+      ],
+      "keywords": [ "format comparison" ],
+      "answer": "There is no difference in difficulty between computer-based and paper-based IELTS. The choice depends on your personal preference."
+    },
+    {
+      "id": 35,
+      "intent": "writing_tasks",
+      "questions": [
+        "How many tasks in IELTS Writing?",
+        "What are IELTS Writing tasks?",
+        "Explain writing task 1 and 2",
+        "IELTS writing structure?",
+        "Writing section tasks?"
+      ],
+      "keywords": [ "writing tasks" ],
+      "answer": "The IELTS Writing section consists of two tasks: Task 1 and Task 2. Task 1 involves describing data or situations, while Task 2 requires writing an essay."
+    },
+    {
+      "id": 36,
+      "intent": "listening_repeats",
+      "questions": [
+        "Can I listen twice in IELTS Listening?",
+        "Are IELTS recordings repeated?",
+        "How many times is audio played?",
+        "IELTS listening replay?",
+        "Can I hear recording again?"
+      ],
+      "keywords": [ "listening rules" ],
+      "answer": "No, each recording in the IELTS Listening test is played only once."
+    },
+    {
+      "id": 37,
+      "intent": "reading_time",
+      "questions": [
+        "How long is IELTS Reading?",
+        "Reading section duration?",
+        "Time for IELTS Reading?",
+        "IELTS reading timing?",
+        "How many minutes for reading?"
+      ],
+      "keywords": [ "reading time" ],
+      "answer": "The IELTS Reading section lasts 60 minutes and includes 40 questions."
+    },
+    {
+      "id": 38,
+      "intent": "writing_time",
+      "questions": [
+        "How long is IELTS Writing?",
+        "Writing section duration?",
+        "Time for IELTS Writing?",
+        "IELTS writing timing?",
+        "How many minutes for writing?"
+      ],
+      "keywords": [ "writing time" ],
+      "answer": "The IELTS Writing section lasts 60 minutes and includes two tasks."
+    },
+    {
+      "id": 39,
+      "intent": "speaking_time",
+      "questions": [
+        "How long is IELTS Speaking?",
+        "Speaking test duration?",
+        "Time for IELTS Speaking?",
+        "IELTS speaking timing?",
+        "How many minutes is speaking test?"
+      ],
+      "keywords": [ "speaking time" ],
+      "answer": "The IELTS Speaking test lasts between 11 and 14 minutes."
+    },
+  {
+    "id": 40,
+    "intent": "test_locations",
+    "questions": [
+      "Where can I take IELTS?",
+      "IELTS test locations?",
+      "Where is IELTS available?",
+      "Find IELTS test center?",
+      "Where are IELTS exams held?"
+    ],
+    "keywords": [ "locations" ],
+    "answer": "IELTS is available in many countries worldwide at authorized test centers run by organizations such as the British Council and IDP."
+  },
+    {
+      "id": 41,
+      "intent": "passport_requirement",
+      "questions": [
+        "Is passport mandatory for IELTS?",
+        "Do I need a passport for IELTS?",
+        "Can I take IELTS without passport?",
+        "Is ID enough for IELTS?",
+        "What ID is required on IELTS test day?"
+      ],
+      "keywords": [ "passport", "ID" ],
+      "answer": "In most countries, a valid passport is required for IELTS registration and on the test day. Some countries may accept a national ID, but you must use the same document throughout the process."
+    },
+    {
+      "id": 42,
+      "intent": "score_validity_universities",
+      "questions": [
+        "Do universities accept old IELTS scores?",
+        "How long do universities accept IELTS?",
+        "Can I use expired IELTS score?",
+        "IELTS validity for universities?",
+        "Do colleges accept IELTS after 2 years?"
+      ],
+      "keywords": [ "validity", "universities" ],
+      "answer": "Most universities only accept IELTS scores that are less than two years old. After that, the score is considered expired."
+    },
+    {
+      "id": 43,
+      "intent": "multiple_attempts_gap",
+      "questions": [
+        "Is there a waiting period between IELTS attempts?",
+        "How soon can I retake IELTS?",
+        "Gap between IELTS exams?",
+        "Can I take IELTS again immediately?",
+        "IELTS retake waiting time?"
+      ],
+      "keywords": [ "retake", "gap" ],
+      "answer": "There is no mandatory waiting period between IELTS attempts. You can register for another test as soon as you feel ready."
+    },
+    {
+      "id": 44,
+      "intent": "ielts_vs_toefl",
+      "questions": [
+        "Which is better IELTS or TOEFL?",
+        "Difference between IELTS and TOEFL?",
+        "Should I take IELTS or TOEFL?",
+        "IELTS vs TOEFL comparison?",
+        "Is IELTS easier than TOEFL?"
+      ],
+      "keywords": [ "comparison", "TOEFL" ],
+      "answer": "IELTS and TOEFL are both English proficiency tests. IELTS includes face-to-face speaking, while TOEFL is computer-based. The choice depends on your preference and the requirements of your institution."
+    },
+    {
+      "id": 45,
+      "intent": "ielts_for_immigration",
+      "questions": [
+        "Is IELTS required for immigration?",
+        "Do I need IELTS for visa?",
+        "IELTS for migration purposes?",
+        "Is IELTS needed for PR?",
+        "Why is IELTS needed for immigration?"
+      ],
+      "keywords": [ "immigration", "visa" ],
+      "answer": "IELTS is often required for immigration to English-speaking countries as proof of English language proficiency."
+    },
+    {
+      "id": 46,
+      "intent": "ielts_for_work",
+      "questions": [
+        "Is IELTS required for jobs?",
+        "Do employers ask for IELTS?",
+        "IELTS for work purposes?",
+        "Is IELTS needed for employment?",
+        "Do companies require IELTS?"
+      ],
+      "keywords": [ "work" ],
+      "answer": "Some employers require IELTS scores to ensure candidates have sufficient English skills, especially for international roles."
+    },
+    {
+      "id": 47,
+      "intent": "ielts_for_study",
+      "questions": [
+        "Is IELTS required for studying abroad?",
+        "Do I need IELTS for university?",
+        "IELTS for higher education?",
+        "Is IELTS mandatory for study?",
+        "Why do universities require IELTS?"
+      ],
+      "keywords": [ "study" ],
+      "answer": "Many universities require IELTS scores to assess whether students can understand and communicate effectively in English during their studies."
+    },
+    {
+      "id": 48,
+      "intent": "band_score_average",
+      "questions": [
+        "How is IELTS overall band calculated?",
+        "How do you calculate IELTS average score?",
+        "IELTS final band calculation?",
+        "How is total IELTS score computed?",
+        "Explain IELTS band averaging"
+      ],
+      "keywords": [ "average score" ],
+      "answer": "The overall IELTS band score is calculated by averaging the scores of the four sections and rounding to the nearest half or whole band."
+    },
+    {
+      "id": 49,
+      "intent": "half_band",
+      "questions": [
+        "What is half band in IELTS?",
+        "Can IELTS score be 6.5?",
+        "Does IELTS have half scores?",
+        "Explain IELTS band decimals",
+        "Is 7.5 possible in IELTS?"
+      ],
+      "keywords": [ "half band" ],
+      "answer": "Yes, IELTS scores can include half bands such as 6.5 or 7.5. These represent performance between full band levels."
+    },
+    {
+      "id": 50,
+      "intent": "speaking_parts",
+      "questions": [
+        "How many parts in IELTS Speaking?",
+        "Structure of IELTS Speaking?",
+        "What are speaking test parts?",
+        "Explain IELTS Speaking sections",
+        "How is IELTS Speaking divided?"
+      ],
+      "keywords": [ "speaking structure" ],
+      "answer": "The IELTS Speaking test has three parts: an introduction and interview, a short speech, and a discussion."
+    },
+    {
+      "id": 51,
+      "intent": "writing_task2_weight",
+      "questions": [
+        "Is writing task 2 more important?",
+        "Does task 2 carry more marks?",
+        "IELTS writing scoring weight?",
+        "Which writing task is more important?",
+        "Task 1 vs Task 2 scoring?"
+      ],
+      "keywords": [ "writing scoring" ],
+      "answer": "Yes, Task 2 carries more weight than Task 1 in the IELTS Writing section and has a greater impact on your final writing score."
+    },
+    {
+      "id": 52,
+      "intent": "listening_sections",
+      "questions": [
+        "How many sections in IELTS Listening?",
+        "Listening test structure?",
+        "IELTS listening parts?",
+        "What are listening sections?",
+        "Explain IELTS listening format"
+      ],
+      "keywords": [ "listening structure" ],
+      "answer": "The IELTS Listening test has four sections, each with increasing difficulty and different types of conversations or monologues."
+    },
+    {
+      "id": 53,
+      "intent": "reading_types",
+      "questions": [
+        "What types of reading questions in IELTS?",
+        "IELTS reading question types?",
+        "Kinds of reading tasks?",
+        "Reading exam format?",
+        "Different IELTS reading questions?"
+      ],
+      "keywords": [ "reading types" ],
+      "answer": "IELTS Reading includes various question types such as multiple choice, matching headings, true/false/not given, and sentence completion."
+    },
+    {
+      "id": 54,
+      "intent": "writing_task1_academic",
+      "questions": [
+        "What is writing task 1 academic?",
+        "IELTS academic writing task 1?",
+        "Describe charts in IELTS?",
+        "Academic writing first task?",
+        "What do you do in writing task 1 academic?"
+      ],
+      "keywords": [ "writing task 1 academic" ],
+      "answer": "In IELTS Academic Writing Task 1, you are required to describe visual data such as graphs, charts, or diagrams."
+    },
+    {
+      "id": 55,
+      "intent": "writing_task1_general",
+      "questions": [
+        "What is writing task 1 general?",
+        "IELTS general writing task 1?",
+        "Letter writing in IELTS?",
+        "General writing first task?",
+        "What do you do in general writing task 1?"
+      ],
+      "keywords": [ "writing task 1 general" ],
+      "answer": "In IELTS General Training Writing Task 1, you are asked to write a letter based on a given situation."
+    },
+    {
+      "id": 56,
+      "intent": "speaking_face_to_face",
+      "questions": [
+        "Is IELTS Speaking face to face?",
+        "Do I talk to examiner in IELTS?",
+        "Is speaking test online or in person?",
+        "How is IELTS speaking conducted?",
+        "Do I meet examiner in IELTS?"
+      ],
+      "keywords": [ "speaking format" ],
+      "answer": "Yes, the IELTS Speaking test is conducted face-to-face with an examiner, even for computer-based tests."
+    },
+    {
+      "id": 57,
+      "intent": "test_day_process",
+      "questions": [
+        "What happens on IELTS test day?",
+        "IELTS exam day process?",
+        "What should I expect on test day?",
+        "Steps on IELTS test day?",
+        "How does IELTS day go?"
+      ],
+      "keywords": [ "test day" ],
+      "answer": "On test day, you will check in, verify your identity, and complete the Listening, Reading, and Writing sections. The Speaking test may be on the same day or scheduled separately."
+    },
+    {
+      "id": 58,
+      "intent": "late_result_issue",
+      "questions": [
+        "What if IELTS results are delayed?",
+        "Why is my IELTS result late?",
+        "Delayed IELTS score?",
+        "When results are not released on time?",
+        "IELTS result delay reasons?"
+      ],
+      "keywords": [ "results delay" ],
+      "answer": "IELTS results may be delayed due to additional quality checks or administrative reasons. You should contact your test center for updates."
+    },
+    {
+      "id": 59,
+      "intent": "score_recheck",
+      "questions": [
+        "Can I request IELTS recheck?",
+        "What is IELTS remark?",
+        "How to review IELTS score?",
+        "Can IELTS score be changed?",
+        "Request score re-evaluation?"
+      ],
+      "keywords": [ "remark", "recheck" ],
+      "answer": "Yes, you can request a re-evaluation of your IELTS test, known as an Enquiry on Results. This may result in a score change."
+    },
+  {
+    "id": 60,
+    "intent": "score_improvement_time",
+    "questions": [
+      "How long to improve IELTS score?",
+      "Time needed to increase IELTS band?",
+      "How fast can I improve IELTS?",
+      "IELTS improvement duration?",
+      "How long should I study for IELTS?"
+    ],
+    "keywords": [ "improvement time" ],
+    "answer": "The time needed to improve your IELTS score depends on your current level, but most candidates require several weeks to a few months of consistent practice."
+  },
+    {
+      "id": 61,
+      "intent": "ielts_vs_general_english",
+      "questions": [
+        "Is IELTS a general English test?",
+        "What is the difference between IELTS and normal English tests?",
+        "Is IELTS the same as learning English?",
+        "Does IELTS test general English?",
+        "Is IELTS different from regular English exams?"
+      ],
+      "keywords": [ "general english", "difference" ],
+      "answer": "IELTS is not a general English course but a standardized test that measures your English proficiency across four skills for academic, work, or migration purposes."
+    },
+    {
+      "id": 62,
+      "intent": "ielts_online",
+      "questions": [
+        "Can I take IELTS online from home?",
+        "Is IELTS available online?",
+        "Can I do IELTS test remotely?",
+        "IELTS online exam option?",
+        "Take IELTS from home?"
+      ],
+      "keywords": [ "online" ],
+      "answer": "IELTS cannot be taken from home. It must be completed at an official test center, although computer-based options are available at the center."
+    },
+    {
+      "id": 63,
+      "intent": "ielts_language",
+      "questions": [
+        "Is IELTS only in English?",
+        "Can I take IELTS in another language?",
+        "What language is IELTS in?",
+        "Is IELTS available in Arabic?",
+        "Can IELTS be taken in different languages?"
+      ],
+      "keywords": [ "language" ],
+      "answer": "IELTS is conducted entirely in English and is designed to assess your ability to use English effectively."
+    },
+    {
+      "id": 64,
+      "intent": "ielts_academic_vs_general_difference",
+      "questions": [
+        "Difference between IELTS Academic and General?",
+        "How is Academic IELTS different from General?",
+        "Which IELTS type should I take?",
+        "Academic vs General IELTS?",
+        "What is the difference in IELTS types?"
+      ],
+      "keywords": [ "academic", "general" ],
+      "answer": "IELTS Academic focuses on academic language and is used for university admission, while General Training focuses on everyday communication for work or migration."
+    },
+    {
+      "id": 65,
+      "intent": "ielts_registration_payment",
+      "questions": [
+        "How do I pay for IELTS?",
+        "IELTS payment methods?",
+        "Can I pay IELTS fee online?",
+        "How to pay IELTS registration?",
+        "Payment options for IELTS?"
+      ],
+      "keywords": [ "payment" ],
+      "answer": "You can pay the IELTS test fee online using credit or debit cards, or through other methods depending on your country and test center."
+    },
+    {
+      "id": 66,
+      "intent": "ielts_test_frequency",
+      "questions": [
+        "How often is IELTS held?",
+        "IELTS test dates availability?",
+        "How many times per month is IELTS?",
+        "Is IELTS conducted every week?",
+        "When are IELTS exams held?"
+      ],
+      "keywords": [ "test dates" ],
+      "answer": "IELTS tests are conducted multiple times a month, and availability depends on your location and test center."
+    },
+    {
+      "id": 67,
+      "intent": "ielts_speaking_same_day",
+      "questions": [
+        "Is IELTS Speaking on the same day?",
+        "Do I take speaking with other sections?",
+        "When is IELTS Speaking test scheduled?",
+        "Is speaking separate in IELTS?",
+        "Speaking test timing?"
+      ],
+      "keywords": [ "speaking schedule" ],
+      "answer": "The IELTS Speaking test may be held on the same day as the other sections or within a few days before or after the test date."
+    },
+    {
+      "id": 68,
+      "intent": "ielts_pen_pencil",
+      "questions": [
+        "Can I use pen in IELTS?",
+        "Should I write with pencil in IELTS?",
+        "Pen or pencil in IELTS exam?",
+        "Writing tools in IELTS?",
+        "What should I use to write IELTS?"
+      ],
+      "keywords": [ "writing tools" ],
+      "answer": "You must use a pencil for paper-based IELTS tests, as answers may need to be corrected or erased."
+    },
+    {
+      "id": 69,
+      "intent": "ielts_negative_marking",
+      "questions": [
+        "Is there negative marking in IELTS?",
+        "Do I lose marks for wrong answers?",
+        "IELTS penalty for wrong answers?",
+        "Negative marking IELTS?",
+        "Do wrong answers reduce score?"
+      ],
+      "keywords": [ "marking" ],
+      "answer": "No, there is no negative marking in IELTS. You do not lose marks for incorrect answers."
+    },
+    {
+      "id": 70,
+      "intent": "ielts_guessing",
+      "questions": [
+        "Can I guess answers in IELTS?",
+        "Is guessing allowed in IELTS?",
+        "Should I answer all questions in IELTS?",
+        "What if I don't know the answer?",
+        "Is it better to guess in IELTS?"
+      ],
+      "keywords": [ "guessing" ],
+      "answer": "Yes, you should attempt all questions in IELTS since there is no penalty for wrong answers."
+    },
+    {
+      "id": 71,
+      "intent": "ielts_listening_spelling",
+      "questions": [
+        "Is spelling important in IELTS Listening?",
+        "Do spelling mistakes affect IELTS?",
+        "IELTS listening spelling rules?",
+        "Are spelling errors counted?",
+        "Do I lose marks for spelling?"
+      ],
+      "keywords": [ "spelling" ],
+      "answer": "Yes, correct spelling is important in IELTS Listening and Reading, and mistakes can result in lost marks."
+    },
+    {
+      "id": 72,
+      "intent": "ielts_capital_letters",
+      "questions": [
+        "Can I use capital letters in IELTS?",
+        "Is uppercase allowed in IELTS answers?",
+        "Should I write in capitals?",
+        "Are capital letters accepted?",
+        "IELTS writing in uppercase?"
+      ],
+      "keywords": [ "capital letters" ],
+      "answer": "Yes, you can use capital letters in IELTS answers, and they are often recommended to avoid handwriting issues."
+    },
+    {
+      "id": 73,
+      "intent": "ielts_handwriting",
+      "questions": [
+        "Does handwriting matter in IELTS?",
+        "Is neat writing important?",
+        "Will bad handwriting affect IELTS score?",
+        "Handwriting rules IELTS?",
+        "Do examiners care about handwriting?"
+      ],
+      "keywords": [ "handwriting" ],
+      "answer": "Yes, your handwriting must be clear and legible. Poor handwriting can affect your score if the examiner cannot read your answers."
+    },
+    {
+      "id": 74,
+      "intent": "ielts_breaks",
+      "questions": [
+        "Are there breaks in IELTS exam?",
+        "Can I take a break during IELTS?",
+        "IELTS break time?",
+        "Is there rest between sections?",
+        "Can I leave the room during IELTS?"
+      ],
+      "keywords": [ "breaks" ],
+      "answer": "There are no breaks between the Listening, Reading, and Writing sections. However, you may take a short break before the Speaking test if it is scheduled separately."
+    },
+    {
+      "id": 75,
+      "intent": "ielts_late_speaking",
+      "questions": [
+        "What if I miss IELTS Speaking test?",
+        "Can I be late for speaking?",
+        "Missed IELTS speaking session?",
+        "What happens if I skip speaking?",
+        "IELTS speaking absence?"
+      ],
+      "keywords": [ "speaking late" ],
+      "answer": "If you miss your IELTS Speaking test, it is usually considered a no-show, and you may not receive a score unless you have a valid reason."
+    },
+    {
+      "id": 76,
+      "intent": "ielts_score_immediately",
+      "questions": [
+        "Can I get IELTS results immediately?",
+        "Is IELTS result instant?",
+        "Do I get score right after test?",
+        "Immediate IELTS score?",
+        "Can I see results on test day?"
+      ],
+      "keywords": [ "results" ],
+      "answer": "No, IELTS results are not available immediately. They are released after a few days depending on the test format."
+    },
+    {
+      "id": 77,
+      "intent": "ielts_certificate",
+      "questions": [
+        "Do I get a certificate after IELTS?",
+        "What is IELTS certificate?",
+        "Will I receive a certificate?",
+        "IELTS test report form?",
+        "Proof of IELTS score?"
+      ],
+      "keywords": [ "certificate" ],
+      "answer": "Yes, you will receive a Test Report Form (TRF), which is the official document showing your IELTS scores."
+    },
+    {
+      "id": 78,
+      "intent": "ielts_multiple_countries",
+      "questions": [
+        "Is IELTS accepted worldwide?",
+        "Which countries accept IELTS?",
+        "Can I use IELTS in any country?",
+        "Global acceptance of IELTS?",
+        "Is IELTS recognized internationally?"
+      ],
+      "keywords": [ "acceptance" ],
+      "answer": "IELTS is widely accepted in many countries including the UK, USA, Canada, Australia, and New Zealand."
+    },
+    {
+      "id": 79,
+      "intent": "ielts_minimum_score_fail",
+      "questions": [
+        "Can I fail IELTS?",
+        "Is there pass or fail in IELTS?",
+        "What happens if I get low score?",
+        "Do I fail IELTS exam?",
+        "Minimum IELTS score to pass?"
+      ],
+      "keywords": [ "fail" ],
+      "answer": "There is no pass or fail in IELTS. You receive a band score from 0 to 9, and the required score depends on your goals."
+    },
+  {
+    "id": 80,
+    "intent": "ielts_score_zero",
+    "questions": [
+      "What is band 0 in IELTS?",
+      "Can I get zero in IELTS?",
+      "What happens if I don't attempt?",
+      "IELTS score 0 meaning?",
+      "Is band 0 possible?"
+    ],
+    "keywords": [ "band 0" ],
+    "answer": "Band 0 means no attempt was made to answer any questions in the IELTS test."
+  },
+    {
+      "id": 81,
+      "intent": "ielts_result_lost",
+      "questions": [
+        "What if I lose my IELTS certificate?",
+        "Can I get another IELTS TRF?",
+        "Lost IELTS result form?",
+        "How to replace IELTS certificate?",
+        "Can IELTS reissue my result?"
+      ],
+      "keywords": [ "lost certificate", "TRF" ],
+      "answer": "If you lose your IELTS Test Report Form, you cannot get another personal copy, but you can request additional copies to be sent directly to institutions."
+    },
+    {
+      "id": 82,
+      "intent": "ielts_name_change",
+      "questions": [
+        "Can I change my name on IELTS?",
+        "Wrong name in IELTS registration?",
+        "How to correct IELTS name?",
+        "Name mismatch IELTS?",
+        "Edit personal details IELTS?"
+      ],
+      "keywords": [ "name change" ],
+      "answer": "You must ensure your name matches your ID exactly during registration. Changes are generally not allowed after registration unless due to official errors."
+    },
+    {
+      "id": 83,
+      "intent": "ielts_score_send_limit",
+      "questions": [
+        "How many universities can IELTS send scores to?",
+        "Free IELTS score reports?",
+        "How many TRF copies can I send?",
+        "IELTS score sending limit?",
+        "Number of institutions for IELTS?"
+      ],
+      "keywords": [ "score sending" ],
+      "answer": "You can usually send your IELTS scores to up to five institutions free of charge at the time of registration. Additional reports may require a fee."
+    },
+    {
+      "id": 84,
+      "intent": "ielts_retake_improvement",
+      "questions": [
+        "Will my IELTS score improve if I retake?",
+        "Is retaking IELTS useful?",
+        "Can I get better score next time?",
+        "Should I retake IELTS?",
+        "Does IELTS retake help?"
+      ],
+      "keywords": [ "retake improvement" ],
+      "answer": "Retaking IELTS can improve your score if you prepare better and address your weaknesses before the next attempt."
+    },
+    {
+      "id": 85,
+      "intent": "ielts_accent",
+      "questions": [
+        "Does accent matter in IELTS Speaking?",
+        "Will my accent affect IELTS score?",
+        "Is native accent required?",
+        "Accent importance in IELTS?",
+        "Do I need British accent for IELTS?"
+      ],
+      "keywords": [ "accent" ],
+      "answer": "Accent does not matter in IELTS as long as your speech is clear and understandable."
+    },
+    {
+      "id": 86,
+      "intent": "ielts_speaking_confidence",
+      "questions": [
+        "How to be confident in IELTS Speaking?",
+        "Tips for speaking confidence?",
+        "How to speak fluently in IELTS?",
+        "Improve IELTS speaking confidence?",
+        "How to reduce nervousness in speaking?"
+      ],
+      "keywords": [ "speaking confidence" ],
+      "answer": "To improve confidence in IELTS Speaking, practice regularly, speak clearly, and focus on communication rather than perfection."
+    },
+    {
+      "id": 87,
+      "intent": "ielts_topic_repetition",
+      "questions": [
+        "Are IELTS questions repeated?",
+        "Do IELTS topics repeat?",
+        "Can I get same questions in IELTS?",
+        "IELTS question bank repetition?",
+        "Are past questions reused?"
+      ],
+      "keywords": [ "topics" ],
+      "answer": "IELTS questions may follow similar patterns, but exact questions are rarely repeated to ensure fairness."
+    },
+    {
+      "id": 88,
+      "intent": "ielts_preparation_time_beginner",
+      "questions": [
+        "How long to prepare for IELTS as a beginner?",
+        "IELTS preparation time for beginners?",
+        "How many months to study IELTS?",
+        "Beginner IELTS preparation duration?",
+        "Starting IELTS from zero time needed?"
+      ],
+      "keywords": [ "beginner preparation" ],
+      "answer": "Beginners typically need 2–4 months of consistent study to prepare for IELTS, depending on their starting level."
+    },
+    {
+      "id": 89,
+      "intent": "ielts_preparation_time_advanced",
+      "questions": [
+        "How long to prepare for IELTS if I am advanced?",
+        "IELTS study time for good English level?",
+        "Preparation duration for high level?",
+        "How fast can advanced students prepare?",
+        "IELTS prep for fluent speakers?"
+      ],
+      "keywords": [ "advanced preparation" ],
+      "answer": "Advanced learners may only need a few weeks of focused preparation to familiarize themselves with the IELTS format and improve test strategies."
+    },
+    {
+      "id": 90,
+      "intent": "ielts_section_order",
+      "questions": [
+        "What is the order of IELTS sections?",
+        "Which section comes first in IELTS?",
+        "IELTS exam sequence?",
+        "Order of test sections?",
+        "How is IELTS structured in order?"
+      ],
+      "keywords": [ "order" ],
+      "answer": "The IELTS test usually follows this order: Listening, Reading, Writing, and then Speaking (which may be on a different day)."
+    },
+    {
+      "id": 91,
+      "intent": "ielts_break_between_sections",
+      "questions": [
+        "Is there a break between IELTS sections?",
+        "Do I get rest during IELTS?",
+        "Pause between listening and reading?",
+        "IELTS section breaks?",
+        "Time gap between sections?"
+      ],
+      "keywords": [ "breaks" ],
+      "answer": "There are no breaks between Listening, Reading, and Writing sections. They are completed consecutively."
+    },
+    {
+      "id": 92,
+      "intent": "ielts_headphones",
+      "questions": [
+        "Do we use headphones in IELTS?",
+        "Are headphones provided in listening?",
+        "Listening equipment IELTS?",
+        "Do I hear audio via speakers or headphones?",
+        "IELTS listening devices?"
+      ],
+      "keywords": [ "listening equipment" ],
+      "answer": "In computer-based IELTS, headphones are provided. In paper-based tests, audio is usually played through speakers."
+    },
+    {
+      "id": 93,
+      "intent": "ielts_score_rounding",
+      "questions": [
+        "How is IELTS score rounded?",
+        "IELTS band rounding rules?",
+        "Does IELTS round up scores?",
+        "Score rounding system?",
+        "How final band is rounded?"
+      ],
+      "keywords": [ "rounding" ],
+      "answer": "IELTS scores are rounded to the nearest half or whole band. For example, 6.25 is rounded to 6.5, and 6.75 is rounded to 7.0."
+    },
+    {
+      "id": 94,
+      "intent": "ielts_multiple_tests_same_day",
+      "questions": [
+        "Can I take IELTS twice in one day?",
+        "Multiple IELTS tests same day?",
+        "Can I register for two IELTS tests?",
+        "Take IELTS more than once quickly?",
+        "Two IELTS exams at once?"
+      ],
+      "keywords": [ "multiple tests" ],
+      "answer": "No, you cannot take IELTS more than once on the same day. Each test requires separate registration and scheduling."
+    },
+    {
+      "id": 95,
+      "intent": "ielts_speaking_partner",
+      "questions": [
+        "Is IELTS Speaking with another candidate?",
+        "Do I speak with someone else in IELTS?",
+        "Speaking partner IELTS?",
+        "Group speaking test IELTS?",
+        "Do two people speak together?"
+      ],
+      "keywords": [ "speaking format" ],
+      "answer": "No, the IELTS Speaking test is conducted one-on-one with an examiner, not with another candidate."
+    },
+    {
+      "id": 96,
+      "intent": "ielts_score_use_multiple_times",
+      "questions": [
+        "Can I use IELTS score multiple times?",
+        "Reuse IELTS results?",
+        "Can I apply to many universities with one score?",
+        "Use IELTS for multiple applications?",
+        "Reuse IELTS certificate?"
+      ],
+      "keywords": [ "reuse score" ],
+      "answer": "Yes, you can use your IELTS score to apply to multiple institutions as long as it is still valid within the two-year period."
+    },
+    {
+      "id": 97,
+      "intent": "ielts_special_arrangements",
+      "questions": [
+        "Are there special arrangements for disabilities in IELTS?",
+        "IELTS support for special needs?",
+        "Can disabled candidates take IELTS?",
+        "IELTS accommodations?",
+        "Support for special conditions?"
+      ],
+      "keywords": [ "special needs" ],
+      "answer": "Yes, IELTS provides special arrangements such as extra time or modified materials for candidates with disabilities."
+    },
+    {
+      "id": 98,
+      "intent": "ielts_result_confidentiality",
+      "questions": [
+        "Is IELTS result confidential?",
+        "Who can see my IELTS score?",
+        "Is IELTS score private?",
+        "Do others access my IELTS result?",
+        "IELTS data privacy?"
+      ],
+      "keywords": [ "privacy" ],
+      "answer": "Your IELTS results are confidential and are only shared with institutions you authorize."
+    },
+    {
+      "id": 99,
+      "intent": "ielts_test_difficulty_variation",
+      "questions": [
+        "Is IELTS harder on some dates?",
+        "Does IELTS difficulty change?",
+        "Are some IELTS exams easier?",
+        "Different difficulty levels IELTS?",
+        "Does test difficulty vary?"
+      ],
+      "keywords": [ "difficulty variation" ],
+      "answer": "IELTS maintains a consistent level of difficulty across all test dates to ensure fairness for all candidates."
+    },
+  {
+    "id": 100,
+    "intent": "ielts_study_materials",
+    "questions": [
+      "What materials should I use for IELTS?",
+      "Best resources for IELTS preparation?",
+      "IELTS study books?",
+      "Recommended IELTS materials?",
+      "What to study for IELTS?"
+    ],
+    "keywords": [ "materials" ],
+    "answer": "You should use official IELTS practice materials, sample tests, and reliable preparation books to effectively prepare for the exam."
+  },
+    {
+      "id": 101,
+      "intent": "ielts_definition_indirect",
+      "questions": [
+        "I heard about IELTS, what is it exactly?",
+        "Can you tell me what IELTS is about?",
+        "I don't understand IELTS, explain it",
+        "What exactly is this IELTS exam?",
+        "Can you briefly describe IELTS?"
+      ],
+      "keywords": [ "definition" ],
+      "answer": "IELTS is an international English language proficiency test used to assess the ability of individuals who want to study, work, or migrate to English-speaking countries."
+    },
+    {
+      "id": 102,
+      "intent": "ielts_duration_indirect",
+      "questions": [
+        "How much time will I spend in IELTS exam?",
+        "Will IELTS take a whole day?",
+        "Is IELTS a long exam?",
+        "How many hours do I need for IELTS?",
+        "Time required to finish IELTS?"
+      ],
+      "keywords": [ "duration" ],
+      "answer": "The IELTS test takes about 2 hours and 45 minutes in total, excluding the Speaking section which may be scheduled separately."
+    },
+    {
+      "id": 103,
+      "intent": "ielts_retake_indirect",
+      "questions": [
+        "If I don't get my score, can I try again?",
+        "What if I fail IELTS, can I redo it?",
+        "Am I allowed to repeat IELTS?",
+        "Can I attempt IELTS multiple times?",
+        "What happens if I want to take IELTS again?"
+      ],
+      "keywords": [ "retake" ],
+      "answer": "Yes, you can retake IELTS as many times as you want. There is no restriction on the number of attempts."
+    },
+    {
+      "id": 104,
+      "intent": "ielts_cost_indirect",
+      "questions": [
+        "Is IELTS expensive?",
+        "How much money do I need for IELTS?",
+        "What's the price of IELTS exam?",
+        "Do I have to pay a lot for IELTS?",
+        "Cost required to take IELTS?"
+      ],
+      "keywords": [ "cost" ],
+      "answer": "The IELTS test fee varies by country but generally ranges between $150 and $250 USD."
+    },
+    {
+      "id": 105,
+      "intent": "ielts_registration_indirect",
+      "questions": [
+        "How do I sign up for IELTS?",
+        "What should I do to take IELTS?",
+        "Where do I apply for IELTS?",
+        "How can I join IELTS exam?",
+        "Steps to start IELTS?"
+      ],
+      "keywords": [ "registration" ],
+      "answer": "You can register for IELTS online through official websites such as the British Council or IDP by selecting a test date and completing the application."
+    },
+    {
+      "id": 106,
+      "intent": "ielts_validity_indirect",
+      "questions": [
+        "For how long can I use my IELTS score?",
+        "Does IELTS expire after some time?",
+        "How long will my IELTS result last?",
+        "Can I use IELTS after years?",
+        "Is IELTS valid forever?"
+      ],
+      "keywords": [ "validity" ],
+      "answer": "IELTS results are valid for two years from the test date."
+    },
+    {
+      "id": 107,
+      "intent": "ielts_difficulty_indirect",
+      "questions": [
+        "Is IELTS really hard?",
+        "Should I worry about IELTS difficulty?",
+        "How challenging is IELTS?",
+        "Is IELTS difficult for beginners?",
+        "Do people struggle with IELTS?"
+      ],
+      "keywords": [ "difficulty" ],
+      "answer": "The difficulty of IELTS depends on your English level, but with proper preparation, most candidates can perform well."
+    },
+    {
+      "id": 108,
+      "intent": "ielts_speaking_indirect",
+      "questions": [
+        "Will I talk to someone in IELTS?",
+        "Do I need to speak in IELTS exam?",
+        "Is there an interview in IELTS?",
+        "How does speaking part happen?",
+        "Do I have to speak in front of someone?"
+      ],
+      "keywords": [ "speaking" ],
+      "answer": "Yes, the IELTS Speaking test is a face-to-face interview with an examiner that assesses your spoken English."
+    },
+    {
+      "id": 109,
+      "intent": "ielts_sections_indirect",
+      "questions": [
+        "What do they test in IELTS?",
+        "What skills are checked in IELTS?",
+        "What do I have to do in IELTS?",
+        "What parts are included in IELTS?",
+        "What areas does IELTS cover?"
+      ],
+      "keywords": [ "sections" ],
+      "answer": "IELTS assesses four skills: Listening, Reading, Writing, and Speaking."
+    },
+    {
+      "id": 110,
+      "intent": "ielts_results_indirect",
+      "questions": [
+        "When will I know my IELTS score?",
+        "How fast do I get IELTS results?",
+        "How long do results take?",
+        "When can I see my IELTS result?",
+        "How quickly are IELTS scores released?"
+      ],
+      "keywords": [ "results" ],
+      "answer": "IELTS results are usually available within 3–5 days for computer-based tests and 13 days for paper-based tests."
+    },
+    {
+      "id": 111,
+      "intent": "ielts_pass_fail_confusion",
+      "questions": [
+        "Do I pass or fail IELTS?",
+        "Is IELTS like pass or fail exam?",
+        "Can I fail IELTS test?",
+        "What happens if I fail IELTS?",
+        "Does IELTS have passing score?"
+      ],
+      "keywords": [ "pass fail" ],
+      "answer": "IELTS does not have a pass or fail system. You receive a band score from 0 to 9 based on your performance."
+    },
+    {
+      "id": 112,
+      "intent": "ielts_score_requirement_indirect",
+      "questions": [
+        "What score should I aim for in IELTS?",
+        "How much IELTS score is enough?",
+        "What band is considered good?",
+        "How high should my IELTS score be?",
+        "What score do I need for IELTS?"
+      ],
+      "keywords": [ "score requirement" ],
+      "answer": "A good IELTS score depends on your goals, but most universities require a band score between 6.0 and 7.5."
+    },
+    {
+      "id": 113,
+      "intent": "ielts_online_confusion",
+      "questions": [
+        "Can I just take IELTS from home online?",
+        "Is IELTS fully online now?",
+        "Do I need to go to a center?",
+        "Can I do IELTS on my laptop?",
+        "Is IELTS remote?"
+      ],
+      "keywords": [ "online" ],
+      "answer": "IELTS cannot be taken from home. You must attend an official test center, even for computer-based tests."
+    },
+    {
+      "id": 114,
+      "intent": "ielts_preparation_indirect",
+      "questions": [
+        "How should I start preparing for IELTS?",
+        "What is the best way to get ready for IELTS?",
+        "How do I study IELTS effectively?",
+        "Where do I begin IELTS preparation?",
+        "How can I prepare smartly for IELTS?"
+      ],
+      "keywords": [ "preparation" ],
+      "answer": "Start by understanding the test format, practice all four skills, take mock tests, and improve your vocabulary regularly."
+    },
+    {
+      "id": 115,
+      "intent": "ielts_attempts_confusion",
+      "questions": [
+        "Is there a limit to IELTS attempts?",
+        "How many times can I sit IELTS?",
+        "Can I take IELTS unlimited times?",
+        "Do I have limited chances?",
+        "Any restriction on IELTS tries?"
+      ],
+      "keywords": [ "attempts" ],
+      "answer": "There is no limit to how many times you can take IELTS. You can retake it as often as you like."
+    },
+  {
+    "id": 116,
+    "intent": "ielts_sections_order_confusion",
+    "questions": [
+      "What comes first in IELTS exam?",
+      "Which section do I start with?",
+      "How does IELTS begin?",
+      "First part of IELTS?",
+      "Order of IELTS test?"
+    ],
+    "keywords": [ "order" ],
+    "answer": "IELTS typically begins with the Listening section, then Reading, then Writing, and the Speaking section is either on the same day or on a different day."
+  },
+    {
+      "id": 117,
+      "intent": "ielts_confidence_fear",
+      "questions": [
+        "I'm scared of IELTS, what should I do?",
+        "Is it normal to feel nervous about IELTS?",
+        "How do I deal with IELTS anxiety?",
+        "I'm worried about IELTS exam",
+        "How to stay calm during IELTS?"
+      ],
+      "keywords": [ "anxiety" ],
+      "answer": "It is normal to feel nervous about IELTS. Practicing regularly and familiarizing yourself with the test format can help reduce anxiety."
+    },
+    {
+      "id": 118,
+      "intent": "ielts_real_life_usage",
+      "questions": [
+        "Will IELTS help me in real life?",
+        "Is IELTS useful outside exams?",
+        "Does IELTS improve my English?",
+        "Is IELTS practical for real communication?",
+        "Do people benefit from IELTS?"
+      ],
+      "keywords": [ "usage" ],
+      "answer": "Yes, preparing for IELTS can improve your overall English skills, which are useful in real-life communication, study, and work environments."
+    },
+    {
+      "id": 119,
+      "intent": "ielts_comparison_easy_tests",
+      "questions": [
+        "Is IELTS easier than other English tests?",
+        "Which English test is easiest?",
+        "Is IELTS simple compared to others?",
+        "Is IELTS the hardest test?",
+        "Compare IELTS difficulty with others"
+      ],
+      "keywords": [ "comparison" ],
+      "answer": "The difficulty of IELTS compared to other tests depends on your strengths. Some find IELTS easier due to its format, while others prefer alternatives."
+    },
+  {
+    "id": 120,
+    "intent": "ielts_starting_level",
+    "questions": [
+      "Can I take IELTS with weak English?",
+      "Is IELTS for beginners?",
+      "Do I need high English level before IELTS?",
+      "Can low-level students take IELTS?",
+      "Do I need to be fluent before IELTS?"
+    ],
+    "keywords": [ "level" ],
+    "answer": "Yes, anyone can take IELTS regardless of their level, but your score will reflect your current English proficiency."
+  },
+    {
+      "id": 121,
+      "intent": "ielts_short_definition",
+      "questions": [
+        "IELTS meaning?",
+        "IELTS?",
+        "What IELTS stands for?",
+        "IELTS full form?",
+        "Explain IELTS shortly"
+      ],
+      "keywords": [ "definition" ],
+      "answer": "IELTS stands for International English Language Testing System, a test that measures English language proficiency."
+    },
+    {
+      "id": 122,
+      "intent": "ielts_time_confusion_short",
+      "questions": [
+        "IELTS time?",
+        "Exam duration IELTS?",
+        "How long IELTS?",
+        "Total time?",
+        "IELTS hours?"
+      ],
+      "keywords": [ "duration" ],
+      "answer": "The IELTS test lasts approximately 2 hours and 45 minutes, excluding the Speaking test."
+    },
+    {
+      "id": 123,
+      "intent": "ielts_cost_short",
+      "questions": [
+        "IELTS price?",
+        "Cost IELTS?",
+        "Fee?",
+        "How much IELTS?",
+        "IELTS cost?"
+      ],
+      "keywords": [ "cost" ],
+      "answer": "The IELTS test fee typically ranges between $150 and $250 USD, depending on the country."
+    },
+    {
+      "id": 124,
+      "intent": "ielts_retake_short",
+      "questions": [
+        "Retake IELTS?",
+        "Try again IELTS?",
+        "Repeat test?",
+        "Multiple attempts?",
+        "Retake allowed?"
+      ],
+      "keywords": [ "retake" ],
+      "answer": "Yes, you can retake IELTS as many times as you want without any limit."
+    },
+    {
+      "id": 125,
+      "intent": "ielts_validity_short",
+      "questions": [
+        "IELTS validity?",
+        "Expires when?",
+        "Score valid?",
+        "IELTS expiry?",
+        "How long valid?"
+      ],
+      "keywords": [ "validity" ],
+      "answer": "IELTS scores are valid for two years from the test date."
+    },
+    {
+      "id": 126,
+      "intent": "ielts_pass_confusion_short",
+      "questions": [
+        "Pass IELTS?",
+        "Fail IELTS?",
+        "Pass mark?",
+        "Minimum pass?",
+        "IELTS pass?"
+      ],
+      "keywords": [ "pass" ],
+      "answer": "IELTS does not have a pass or fail system. You receive a band score from 0 to 9."
+    },
+    {
+      "id": 127,
+      "intent": "ielts_sections_short",
+      "questions": [
+        "IELTS sections?",
+        "Parts?",
+        "Modules?",
+        "What sections?",
+        "IELTS parts?"
+      ],
+      "keywords": [ "sections" ],
+      "answer": "IELTS has four sections: Listening, Reading, Writing, and Speaking."
+    },
+    {
+      "id": 128,
+      "intent": "ielts_speaking_short",
+      "questions": [
+        "Speaking interview?",
+        "Talk to examiner?",
+        "Speaking format?",
+        "Oral test?",
+        "IELTS speaking?"
+      ],
+      "keywords": [ "speaking" ],
+      "answer": "The IELTS Speaking test is a face-to-face interview with an examiner lasting 11 to 14 minutes."
+    },
+    {
+      "id": 129,
+      "intent": "ielts_online_short",
+      "questions": [
+        "IELTS online?",
+        "From home?",
+        "Remote test?",
+        "Online exam?",
+        "Home IELTS?"
+      ],
+      "keywords": [ "online" ],
+      "answer": "IELTS cannot be taken from home and must be completed at an official test center."
+    },
+    {
+      "id": 130,
+      "intent": "ielts_registration_short",
+      "questions": [
+        "Register IELTS?",
+        "Apply?",
+        "Sign up?",
+        "Book test?",
+        "How register?"
+      ],
+      "keywords": [ "registration" ],
+      "answer": "You can register for IELTS online through official providers like the British Council or IDP."
+    },
+    {
+      "id": 131,
+      "intent": "ielts_score_short",
+      "questions": [
+        "IELTS score?",
+        "Band system?",
+        "Score range?",
+        "Max score?",
+        "Band levels?"
+      ],
+      "keywords": [ "score" ],
+      "answer": "IELTS scores range from 0 to 9, with each band representing a level of English proficiency."
+    },
+    {
+      "id": 132,
+      "intent": "ielts_results_short",
+      "questions": [
+        "Results time?",
+        "Score release?",
+        "When results?",
+        "IELTS results?",
+        "How long results?"
+      ],
+      "keywords": [ "results" ],
+      "answer": "IELTS results are released within 3–5 days for computer-based tests and 13 days for paper-based tests."
+    },
+    {
+      "id": 133,
+      "intent": "ielts_use_short",
+      "questions": [
+        "Why IELTS?",
+        "Use of IELTS?",
+        "Purpose?",
+        "Needed for?",
+        "Why take IELTS?"
+      ],
+      "keywords": [ "purpose" ],
+      "answer": "IELTS is used to prove English proficiency for study, work, or immigration in English-speaking countries."
+    },
+    {
+      "id": 134,
+      "intent": "ielts_types_short",
+      "questions": [
+        "IELTS types?",
+        "Academic or General?",
+        "Different types?",
+        "Exam types?",
+        "IELTS versions?"
+      ],
+      "keywords": [ "types" ],
+      "answer": "There are two main types of IELTS: Academic and General Training."
+    },
+    {
+      "id": 135,
+      "intent": "ielts_difficulty_short",
+      "questions": [
+        "Hard IELTS?",
+        "Easy or hard?",
+        "Difficult?",
+        "IELTS difficulty?",
+        "Tough exam?"
+      ],
+      "keywords": [ "difficulty" ],
+      "answer": "IELTS difficulty depends on your English level, but with preparation, it is manageable."
+    },
+    {
+      "id": 136,
+      "intent": "ielts_preparation_short",
+      "questions": [
+        "Prepare IELTS?",
+        "Study tips?",
+        "How prepare?",
+        "IELTS study?",
+        "Prep method?"
+      ],
+      "keywords": [ "preparation" ],
+      "answer": "Prepare for IELTS by practicing all four skills, taking mock tests, and improving vocabulary and grammar."
+    },
+    {
+      "id": 137,
+      "intent": "ielts_attempts_short",
+      "questions": [
+        "Attempts limit?",
+        "Unlimited tries?",
+        "How many tries?",
+        "IELTS attempts?",
+        "Retry limit?"
+      ],
+      "keywords": [ "attempts" ],
+      "answer": "There is no limit to the number of times you can take the IELTS test."
+    },
+    {
+      "id": 138,
+      "intent": "ielts_location_short",
+      "questions": [
+        "Where IELTS?",
+        "Test centers?",
+        "Location?",
+        "Where take IELTS?",
+        "Centers?"
+      ],
+      "keywords": [ "location" ],
+      "answer": "IELTS is conducted at official test centers worldwide managed by authorized organizations."
+    },
+    {
+      "id": 139,
+      "intent": "ielts_certificate_short",
+      "questions": [
+        "Certificate?",
+        "Proof?",
+        "TRF?",
+        "Result paper?",
+        "IELTS certificate?"
+      ],
+      "keywords": [ "certificate" ],
+      "answer": "You receive a Test Report Form (TRF), which is the official document showing your IELTS scores."
+    },
+  {
+    "id": 140,
+    "intent": "ielts_score_usage_short",
+    "questions": [
+      "Use score?",
+      "Apply universities?",
+      "Reuse score?",
+      "Multiple use?",
+      "Score usage?"
+    ],
+    "keywords": [ "usage" ],
+    "answer": "You can use your IELTS score for multiple applications as long as it is valid within the two-year period."
+  },
+    {
+      "id": 141,
+      "intent": "ielts_definition_typo",
+      "questions": [
+        "what is ielts exm?",
+        "ielts mean what?",
+        "wht is ielts?",
+        "ielts explain plz",
+        "what is this ielts test?"
+      ],
+      "keywords": [ "definition" ],
+      "answer": "IELTS is an international English language proficiency test used to assess skills for study, work, or migration."
+    },
+    {
+      "id": 142,
+      "intent": "ielts_duration_typo",
+      "questions": [
+        "how long ielts exm?",
+        "ielts time how many hr?",
+        "exam duration ielts?",
+        "ielts take how much time?",
+        "how many hours ielts?"
+      ],
+      "keywords": [ "duration" ],
+      "answer": "The IELTS exam takes approximately 2 hours and 45 minutes, excluding the Speaking section."
+    },
+    {
+      "id": 143,
+      "intent": "ielts_cost_typo",
+      "questions": [
+        "ielts price how much?",
+        "cost of ielts exm?",
+        "how much pay for ielts?",
+        "ielts fee plz?",
+        "ielts expnsive?"
+      ],
+      "keywords": [ "cost" ],
+      "answer": "The IELTS test fee typically ranges between $150 and $250 USD depending on the country."
+    },
+    {
+      "id": 144,
+      "intent": "ielts_retake_typo",
+      "questions": [
+        "can i retke ielts?",
+        "ielts again possible?",
+        "repeat exam ielts?",
+        "can give again ielts?",
+        "retake allowed ielts?"
+      ],
+      "keywords": [ "retake" ],
+      "answer": "Yes, you can retake IELTS as many times as you want without any limit."
+    },
+    {
+      "id": 145,
+      "intent": "ielts_validity_typo",
+      "questions": [
+        "ielts valid how long?",
+        "score expire ielts?",
+        "ielts expiry time?",
+        "how long use ielts?",
+        "ielts valid yrs?"
+      ],
+      "keywords": [ "validity" ],
+      "answer": "IELTS scores are valid for two years from the test date."
+    },
+    {
+      "id": 146,
+      "intent": "ielts_results_typo",
+      "questions": [
+        "ielts result when come?",
+        "how long for result?",
+        "result delay ielts?",
+        "when get ielts score?",
+        "ielts score time?"
+      ],
+      "keywords": [ "results" ],
+      "answer": "IELTS results are available within 3–5 days for computer-based tests and 13 days for paper-based tests."
+    },
+    {
+      "id": 147,
+      "intent": "ielts_registration_typo",
+      "questions": [
+        "how reg ielts?",
+        "apply ielts how?",
+        "ielts signup?",
+        "book ielts exam?",
+        "how to join ielts?"
+      ],
+      "keywords": [ "registration" ],
+      "answer": "You can register for IELTS online through official providers like the British Council or IDP."
+    },
+    {
+      "id": 148,
+      "intent": "ielts_sections_typo",
+      "questions": [
+        "ielts parts how many?",
+        "sections in ielts?",
+        "what parts ielts?",
+        "ielts modules?",
+        "how many section?"
+      ],
+      "keywords": [ "sections" ],
+      "answer": "IELTS consists of four sections: Listening, Reading, Writing, and Speaking."
+    },
+    {
+      "id": 149,
+      "intent": "ielts_speaking_typo",
+      "questions": [
+        "ielts speaking interview?",
+        "talk to examiner ielts?",
+        "speaking part how?",
+        "oral test ielts?",
+        "speaking exm?"
+      ],
+      "keywords": [ "speaking" ],
+      "answer": "The IELTS Speaking test is a face-to-face interview with an examiner lasting 11 to 14 minutes."
+    },
+    {
+      "id": 150,
+      "intent": "ielts_online_typo",
+      "questions": [
+        "ielts online from home?",
+        "home test ielts?",
+        "can do ielts online?",
+        "ielts remote exam?",
+        "online ielts possible?"
+      ],
+      "keywords": [ "online" ],
+      "answer": "IELTS cannot be taken from home and must be completed at an official test center."
+    },
+    {
+      "id": 151,
+      "intent": "ielts_pass_typo",
+      "questions": [
+        "pass ielts or fail?",
+        "ielts pass mark?",
+        "fail ielts?",
+        "ielts pass score?",
+        "minimum pass ielts?"
+      ],
+      "keywords": [ "pass" ],
+      "answer": "IELTS does not have a pass or fail system. You receive a band score from 0 to 9."
+    },
+    {
+      "id": 152,
+      "intent": "ielts_score_typo",
+      "questions": [
+        "ielts band score?",
+        "score range ielts?",
+        "max score?",
+        "ielts bands?",
+        "score system?"
+      ],
+      "keywords": [ "score" ],
+      "answer": "IELTS scores range from 0 to 9, representing different levels of English proficiency."
+    },
+    {
+      "id": 153,
+      "intent": "ielts_types_typo",
+      "questions": [
+        "types of ielts?",
+        "academic or general?",
+        "ielts kinds?",
+        "different ielts?",
+        "ielts versions?"
+      ],
+      "keywords": [ "types" ],
+      "answer": "There are two types of IELTS: Academic and General Training."
+    },
+    {
+      "id": 154,
+      "intent": "ielts_use_typo",
+      "questions": [
+        "why take ielts?",
+        "use of ielts?",
+        "purpose ielts?",
+        "why needed?",
+        "ielts for what?"
+      ],
+      "keywords": [ "purpose" ],
+      "answer": "IELTS is used to prove English proficiency for study, work, or immigration purposes."
+    },
+    {
+      "id": 155,
+      "intent": "ielts_preparation_typo",
+      "questions": [
+        "how prepare ielts?",
+        "study tips ielts?",
+        "prep for ielts?",
+        "how study?",
+        "ielts prep how?"
+      ],
+      "keywords": [ "preparation" ],
+      "answer": "Prepare for IELTS by practicing all four skills, taking mock tests, and improving vocabulary and grammar."
+    },
+    {
+      "id": 156,
+      "intent": "ielts_difficulty_typo",
+      "questions": [
+        "ielts hard or easy?",
+        "difficult exam?",
+        "ielts tough?",
+        "hard test?",
+        "ielts difficulty?"
+      ],
+      "keywords": [ "difficulty" ],
+      "answer": "IELTS difficulty depends on your English level, but with preparation, it is manageable."
+    },
+    {
+      "id": 157,
+      "intent": "ielts_attempts_typo",
+      "questions": [
+        "limit attempts ielts?",
+        "how many tries?",
+        "retry limit?",
+        "ielts attempts?",
+        "unlimited tries?"
+      ],
+      "keywords": [ "attempts" ],
+      "answer": "There is no limit to the number of times you can take the IELTS test."
+    },
+    {
+      "id": 158,
+      "intent": "ielts_location_typo",
+      "questions": [
+        "where ielts test?",
+        "test center location?",
+        "where give exam?",
+        "ielts centers?",
+        "location ielts?"
+      ],
+      "keywords": [ "location" ],
+      "answer": "IELTS is conducted at official test centers worldwide managed by authorized organizations."
+    },
+    {
+      "id": 159,
+      "intent": "ielts_certificate_typo",
+      "questions": [
+        "ielts certificate?",
+        "result paper?",
+        "proof score?",
+        "trf what?",
+        "ielts document?"
+      ],
+      "keywords": [ "certificate" ],
+      "answer": "You receive a Test Report Form (TRF), which is the official document showing your IELTS scores."
+    },
+  {
+    "id": 160,
+    "intent": "ielts_usage_typo",
+    "questions": [
+      "use score many times?",
+      "apply many uni?",
+      "reuse ielts?",
+      "multiple use score?",
+      "use again?"
+    ],
+    "keywords": [ "usage" ],
+    "answer": "You can use your IELTS score multiple times for different applications within its two-year validity."
+  },
+    {
+      "id": 161,
+      "intent": "ielts_mixed_definition_purpose",
+      "questions": [
+        "What is IELTS and why do I need it?",
+        "Explain IELTS and its purpose",
+        "What is IELTS used for exactly?",
+        "Why IELTS and what is it?",
+        "Tell me about IELTS and why people take it"
+      ],
+      "keywords": [ "definition", "purpose" ],
+      "answer": "IELTS is an English proficiency test used to assess language skills for study, work, or migration in English-speaking countries."
+    },
+    {
+      "id": 162,
+      "intent": "ielts_mixed_duration_sections",
+      "questions": [
+        "How long is IELTS and what are the sections?",
+        "Duration and parts of IELTS?",
+        "How much time and what sections?",
+        "IELTS time and structure?",
+        "Explain IELTS duration and sections"
+      ],
+      "keywords": [ "duration", "sections" ],
+      "answer": "IELTS takes about 2 hours and 45 minutes and includes four sections: Listening, Reading, Writing, and Speaking."
+    },
+    {
+      "id": 163,
+      "intent": "ielts_mixed_score_validity",
+      "questions": [
+        "What score do I get and how long is it valid?",
+        "IELTS band and validity?",
+        "Score system and expiry?",
+        "How IELTS score works and expires?",
+        "Band score and validity period?"
+      ],
+      "keywords": [ "score", "validity" ],
+      "answer": "IELTS scores range from 0 to 9 and are valid for two years from the test date."
+    },
+    {
+      "id": 164,
+      "intent": "ielts_mixed_registration_cost",
+      "questions": [
+        "How do I register and how much does it cost?",
+        "IELTS booking and price?",
+        "Apply process and fee?",
+        "Registration steps and cost?",
+        "Sign up IELTS and price?"
+      ],
+      "keywords": [ "registration", "cost" ],
+      "answer": "You can register online through official IELTS providers, and the test fee usually ranges between $150 and $250 USD."
+    },
+    {
+      "id": 165,
+      "intent": "ielts_ambiguous_easy_or_needed",
+      "questions": [
+        "Do I really need IELTS?",
+        "Is IELTS necessary?",
+        "Should I even take IELTS?",
+        "Is IELTS important?",
+        "Do people need IELTS?"
+      ],
+      "keywords": [ "need" ],
+      "answer": "IELTS is required if you plan to study, work, or migrate to countries that require proof of English proficiency."
+    },
+    {
+      "id": 166,
+      "intent": "ielts_ambiguous_confusion",
+      "questions": [
+        "I don't get IELTS at all",
+        "IELTS is confusing, explain",
+        "I am lost about IELTS",
+        "Can you simplify IELTS?",
+        "Explain IELTS in simple way"
+      ],
+      "keywords": [ "confusion" ],
+      "answer": "IELTS is a test that measures your English skills in listening, reading, writing, and speaking for study, work, or migration purposes."
+    },
+    {
+      "id": 167,
+      "intent": "ielts_edge_low_score",
+      "questions": [
+        "What if I get a very low score?",
+        "Is low IELTS score useless?",
+        "Can I use a low band?",
+        "What happens if my IELTS is bad?",
+        "Low score consequences?"
+      ],
+      "keywords": [ "low score" ],
+      "answer": "A low IELTS score may limit your options, but you can retake the test to improve your result."
+    },
+    {
+      "id": 168,
+      "intent": "ielts_edge_high_score",
+      "questions": [
+        "Is band 9 common?",
+        "How rare is high IELTS score?",
+        "Is getting 9 in IELTS easy?",
+        "Top IELTS score difficulty?",
+        "Can anyone get band 9?"
+      ],
+      "keywords": [ "high score" ],
+      "answer": "Band 9 is the highest IELTS score and is difficult to achieve, requiring near-perfect English proficiency."
+    },
+    {
+      "id": 169,
+      "intent": "ielts_edge_no_preparation",
+      "questions": [
+        "Can I take IELTS without studying?",
+        "Is preparation necessary?",
+        "Can I pass IELTS without prep?",
+        "What if I don't prepare?",
+        "No study IELTS possible?"
+      ],
+      "keywords": [ "preparation" ],
+      "answer": "While you can take IELTS without preparation, studying is strongly recommended to achieve a good score."
+    },
+    {
+      "id": 170,
+      "intent": "ielts_edge_fast_preparation",
+      "questions": [
+        "Can I prepare for IELTS in a week?",
+        "Fast IELTS preparation possible?",
+        "One week IELTS prep?",
+        "Can I study IELTS quickly?",
+        "Short time IELTS prep?"
+      ],
+      "keywords": [ "fast prep" ],
+      "answer": "It is possible to prepare in a short time if you already have a strong English level, but most candidates need more time."
+    },
+    {
+      "id": 171,
+      "intent": "ielts_mixed_speaking_confidence",
+      "questions": [
+        "I'm nervous about speaking, what should I do?",
+        "How to handle IELTS speaking fear?",
+        "Speaking anxiety IELTS tips?",
+        "Scared of speaking test help?",
+        "Confidence in IELTS speaking?"
+      ],
+      "keywords": [ "speaking", "anxiety" ],
+      "answer": "Practice speaking regularly, stay calm, and focus on clear communication rather than perfection to improve confidence."
+    },
+    {
+      "id": 172,
+      "intent": "ielts_edge_multiple_goals",
+      "questions": [
+        "Can I use IELTS for both study and work?",
+        "One IELTS for multiple purposes?",
+        "Use IELTS for university and job?",
+        "IELTS for study and migration?",
+        "Multiple uses IELTS?"
+      ],
+      "keywords": [ "usage" ],
+      "answer": "Yes, IELTS can be used for multiple purposes such as study, work, and migration as long as the score is valid."
+    },
+    {
+      "id": 173,
+      "intent": "ielts_ambiguous_score_good",
+      "questions": [
+        "Is my IELTS score good?",
+        "What is considered a good band?",
+        "How do I know if my score is enough?",
+        "Good IELTS result?",
+        "Is my band acceptable?"
+      ],
+      "keywords": [ "score" ],
+      "answer": "A good IELTS score depends on your goals, but most universities require between 6.0 and 7.5."
+    },
+    {
+      "id": 174,
+      "intent": "ielts_edge_skip_section",
+      "questions": [
+        "What if I skip a section?",
+        "Can I leave one part blank?",
+        "Skip writing or speaking?",
+        "Not attempt one section?",
+        "What happens if I miss a section?"
+      ],
+      "keywords": [ "skip" ],
+      "answer": "If you skip a section, it will significantly lower your overall score since each section contributes to the final band."
+    },
+    {
+      "id": 175,
+      "intent": "ielts_edge_wrong_answers_all",
+      "questions": [
+        "What if all my answers are wrong?",
+        "Do I get zero?",
+        "Worst IELTS score?",
+        "All incorrect answers?",
+        "Minimum band possible?"
+      ],
+      "keywords": [ "score" ],
+      "answer": "If all answers are incorrect, your score will be very low, possibly close to band 0 or 1 depending on performance."
+    },
+    {
+      "id": 176,
+      "intent": "ielts_edge_no_speaking",
+      "questions": [
+        "What if I don't speak in speaking test?",
+        "Stay silent in IELTS speaking?",
+        "No answer speaking section?",
+        "Refuse to speak?",
+        "Speaking section blank?"
+      ],
+      "keywords": [ "speaking" ],
+      "answer": "If you do not speak during the Speaking test, you will receive a very low score for that section."
+    },
+    {
+      "id": 177,
+      "intent": "ielts_edge_wrong_registration",
+      "questions": [
+        "What if I enter wrong details?",
+        "Mistake in IELTS form?",
+        "Wrong info registration?",
+        "Incorrect data IELTS?",
+        "Registration error?"
+      ],
+      "keywords": [ "registration" ],
+      "answer": "Incorrect details may cause issues on test day, so you should contact the test center immediately to correct them."
+    },
+    {
+      "id": 178,
+      "intent": "ielts_edge_late_preparation",
+      "questions": [
+        "I have no time left for IELTS",
+        "Last minute IELTS prep?",
+        "Exam soon what to do?",
+        "No time to study IELTS?",
+        "Urgent IELTS preparation?"
+      ],
+      "keywords": [ "preparation" ],
+      "answer": "Focus on practicing key skills, take mock tests, and review common question types to maximize your preparation in limited time."
+    },
+    {
+      "id": 179,
+      "intent": "ielts_edge_compare_self",
+      "questions": [
+        "Others get high score, why not me?",
+        "Why is IELTS hard for me?",
+        "Struggling with IELTS?",
+        "Why can't I improve IELTS?",
+        "Difficulty improving score?"
+      ],
+      "keywords": [ "difficulty" ],
+      "answer": "Improvement depends on consistent practice, identifying weak areas, and using effective study strategies."
+    },
+    {
+      "id": 180,
+      "intent": "ielts_edge_multiple_attempts_confusion",
+      "questions": [
+        "Will universities see all my attempts?",
+        "Do they check previous IELTS scores?",
+        "Multiple attempts issue?",
+        "Will bad score affect me?",
+        "Old IELTS attempts visible?"
+      ],
+      "keywords": [ "attempts" ],
+      "answer": "Universities usually consider the score you submit, and previous attempts are not automatically shared unless you provide them."
+    },
+    {
+      "id": 181,
+      "intent": "ielts_edge_result_delay_stress",
+      "questions": [
+        "My IELTS result is late, what now?",
+        "Still waiting for score?",
+        "Result not released yet?",
+        "Delay stressing me?",
+        "IELTS result delay help?"
+      ],
+      "keywords": [ "results" ],
+      "answer": "If your IELTS result is delayed, contact your test center as delays may happen due to quality checks."
+    },
+    {
+      "id": 182,
+      "intent": "ielts_edge_wrong_answers_strategy",
+      "questions": [
+        "Should I leave answers blank or guess?",
+        "Better to guess or skip?",
+        "Strategy for unknown answers?",
+        "Not sure answers what to do?",
+        "Guessing in IELTS?"
+      ],
+      "keywords": [ "strategy" ],
+      "answer": "It is better to attempt all questions, as there is no penalty for wrong answers in IELTS."
+    },
+    {
+      "id": 183,
+      "intent": "ielts_edge_language_confusion",
+      "questions": [
+        "Can I mix languages in IELTS?",
+        "Use native language?",
+        "Speak Arabic or others?",
+        "Write in different language?",
+        "Non-English allowed?"
+      ],
+      "keywords": [ "language" ],
+      "answer": "IELTS must be completed entirely in English, and using other languages is not allowed."
+    },
+    {
+      "id": 184,
+      "intent": "ielts_edge_multiple_scores_use",
+      "questions": [
+        "Can I choose best score?",
+        "Use highest IELTS result?",
+        "Multiple scores which one to send?",
+        "Pick best band?",
+        "Best result usage?"
+      ],
+      "keywords": [ "score" ],
+      "answer": "Yes, you can choose to submit your highest IELTS score to institutions."
+    },
+    {
+      "id": 185,
+      "intent": "ielts_edge_confusing_sections",
+      "questions": [
+        "Which IELTS section is hardest?",
+        "Most difficult part?",
+        "Hardest section IELTS?",
+        "Which part to focus?",
+        "What section is tough?"
+      ],
+      "keywords": [ "difficulty" ],
+      "answer": "The hardest section varies by individual, but many find Writing or Listening more challenging depending on their skills."
+    },
+    {
+      "id": 186,
+      "intent": "ielts_edge_no_id",
+      "questions": [
+        "What if I forget my ID?",
+        "No passport on test day?",
+        "Missing ID IELTS?",
+        "Can I enter without ID?",
+        "Forgot identification?"
+      ],
+      "keywords": [ "ID" ],
+      "answer": "You will not be allowed to take the IELTS test without a valid ID, and you may lose your test fee."
+    },
+    {
+      "id": 187,
+      "intent": "ielts_edge_cheating",
+      "questions": [
+        "What happens if someone cheats in IELTS?",
+        "Is cheating possible?",
+        "IELTS cheating consequences?",
+        "Can I cheat in IELTS?",
+        "Penalty for cheating?"
+      ],
+      "keywords": [ "rules" ],
+      "answer": "Cheating in IELTS is strictly prohibited and can result in disqualification and a ban from future tests."
+    },
+    {
+      "id": 188,
+      "intent": "ielts_edge_multiple_languages_speaking",
+      "questions": [
+        "Can I speak partly in another language?",
+        "Mix English with native language?",
+        "Use some other language in speaking?",
+        "Switch language during speaking?",
+        "Combine languages?"
+      ],
+      "keywords": [ "language" ],
+      "answer": "No, you must speak entirely in English during the IELTS Speaking test."
+    },
+    {
+      "id": 189,
+      "intent": "ielts_edge_exam_stress",
+      "questions": [
+        "What if I panic during IELTS?",
+        "I feel stressed in exam",
+        "Exam anxiety help?",
+        "What to do if nervous?",
+        "Stress during IELTS?"
+      ],
+      "keywords": [ "stress" ],
+      "answer": "Stay calm, take deep breaths, and focus on answering one question at a time to manage stress during the exam."
+    },
+    {
+      "id": 190,
+      "intent": "ielts_edge_repeat_questions_expectation",
+      "questions": [
+        "Will I get same questions as others?",
+        "Are IELTS questions same for everyone?",
+        "Same exam for all?",
+        "Do questions repeat same day?",
+        "Shared questions?"
+      ],
+      "keywords": [ "questions" ],
+      "answer": "IELTS questions may vary between candidates and test sessions to maintain fairness and security."
+    },
+    {
+      "id": 191,
+      "intent": "ielts_edge_score_difference_sections",
+      "questions": [
+        "Why is my score different in each section?",
+        "Uneven IELTS scores?",
+        "Different band in sections?",
+        "Score variation?",
+        "Why listening high but writing low?"
+      ],
+      "keywords": [ "score" ],
+      "answer": "Each IELTS section is scored separately, so differences reflect your strengths and weaknesses in each skill."
+    },
+    {
+      "id": 192,
+      "intent": "ielts_edge_improve_one_section",
+      "questions": [
+        "Can I improve only one skill?",
+        "Focus on writing only?",
+        "Improve speaking only?",
+        "Work on one section?",
+        "Single skill improvement?"
+      ],
+      "keywords": [ "improvement" ],
+      "answer": "Yes, you can focus on improving one section, and in some locations, you may use the One Skill Retake option."
+    },
+    {
+      "id": 193,
+      "intent": "ielts_edge_confusing_score_scale",
+      "questions": [
+        "Is 6.5 good or bad?",
+        "What does 7 mean?",
+        "Is band 5 enough?",
+        "Score confusion?",
+        "Band meaning unclear?"
+      ],
+      "keywords": [ "score" ],
+      "answer": "IELTS band scores represent proficiency levels, and whether a score is good depends on your specific goals."
+    },
+    {
+      "id": 194,
+      "intent": "ielts_edge_no_experience",
+      "questions": [
+        "I never took IELTS before",
+        "First time IELTS tips?",
+        "No experience exam?",
+        "Beginner first attempt?",
+        "First IELTS advice?"
+      ],
+      "keywords": [ "beginner" ],
+      "answer": "Start by understanding the test format, practice regularly, and take mock tests to build confidence for your first attempt."
+    },
+    {
+      "id": 195,
+      "intent": "ielts_edge_multiple_formats_confusion",
+      "questions": [
+        "Computer or paper which is better?",
+        "Which format easier?",
+        "IELTS format confusion?",
+        "Best format choice?",
+        "Computer vs paper?"
+      ],
+      "keywords": [ "format" ],
+      "answer": "Both formats are equal in difficulty, so you should choose based on your comfort with typing or writing."
+    },
+    {
+      "id": 196,
+      "intent": "ielts_edge_time_management",
+      "questions": [
+        "How to manage time in IELTS?",
+        "Time problem during exam?",
+        "Finish all questions?",
+        "Running out of time?",
+        "Time strategy IELTS?"
+      ],
+      "keywords": [ "time" ],
+      "answer": "Practice under timed conditions and allocate time carefully to each section to complete all questions."
+    },
+    {
+      "id": 197,
+      "intent": "ielts_edge_forgetting_answers",
+      "questions": [
+        "I forget answers during listening",
+        "Miss answers listening?",
+        "What if I miss something?",
+        "Can't catch audio?",
+        "Lost during listening?"
+      ],
+      "keywords": [ "listening" ],
+      "answer": "If you miss an answer, stay focused and continue with the next question instead of dwelling on it."
+    },
+    {
+      "id": 198,
+      "intent": "ielts_edge_wrong_strategy",
+      "questions": [
+        "Is memorizing answers good?",
+        "Can I memorize essays?",
+        "Use templates in writing?",
+        "Memorization strategy?",
+        "Pre-learn answers?"
+      ],
+      "keywords": [ "strategy" ],
+      "answer": "Memorization is not recommended, as IELTS assesses your ability to use English naturally and appropriately."
+    },
+    {
+      "id": 199,
+      "intent": "ielts_edge_multiple_goals_confusion",
+      "questions": [
+        "Study or work which IELTS I choose?",
+        "Academic or General confusion?",
+        "Which IELTS for me?",
+        "Type selection?",
+        "Best IELTS type?"
+      ],
+      "keywords": [ "types" ],
+      "answer": "Choose Academic IELTS for university study and General Training for work or migration purposes."
+    },
+    {
+      "id": 200,
+      "intent": "ielts_edge_final_advice",
+      "questions": [
+        "Any final advice for IELTS?",
+        "Last tips before exam?",
+        "Important IELTS advice?",
+        "Final preparation tips?",
+        "Key tips IELTS?"
+      ],
+      "keywords": [ "advice" ],
+      "answer": "Practice regularly, understand the test format, manage your time well, and stay calm during the exam."
+    }
+  ]
